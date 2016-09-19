@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="ContentDescription" >
+
+    <ImageView
+        android:id="@+id/noti_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dp"
+        android:src="@drawable/logo6" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/noti_iv" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/NotificationTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/tzl_title"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/NotificationText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:textColor="@color/tzl_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

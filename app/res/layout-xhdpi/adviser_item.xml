@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <!-- 头像 -->
+
+    <ImageView
+        android:id="@+id/adviser_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+    <!-- 昵称 -->
+
+    <TextView
+        android:id="@+id/adviser_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/adviser_head"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/adviser_head"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <!-- 介绍 -->
+
+    <TextView
+        android:id="@+id/adviser_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/adviser_head"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/adviser_head"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/huise"
+        android:textSize="12sp" />
+    <!-- 作品展示 -->
+
+    <LinearLayout
+        android:id="@+id/adviser_works"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adviser_introduce"
+        android:layout_below="@+id/adviser_introduce"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/adviser_works_one"
+            android:layout_width="fill_parent"
+            android:layout_height="260dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/adviser_works_two"
+            android:layout_width="fill_parent"
+            android:layout_height="260dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,344 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top" />
+
+    <!-- <android.support.v4.widget.NestedScrollView -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/zhuye_bg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/zhuye_selected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:text="收货信息"
+                    android:textColor="@color/black6"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/shxx_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/head_src_2" />
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageview1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black6"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/imageview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/name_tv"
+                    android:src="@drawable/phone_src_1" />
+
+                <TextView
+                    android:id="@+id/phone_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageview2"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black6"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/address_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_tv"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black6"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/gd_src_1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/payment_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/zffs"
+                    android:layout_alignTop="@+id/zffs"
+                    android:background="@color/zhuye_selected" />
+
+                <TextView
+                    android:id="@+id/zffs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="支付方式"
+                    android:textColor="@color/black6"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="支付宝"
+                    android:textColor="@color/black6"
+                    android:textSize="14dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/recomend_selected"
+                    android:enabled="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ybj_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/ybj_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black6"
+                    android:textSize="14dp" />
+
+                <CheckBox
+                    android:id="@+id/ybj_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/checkbox_selector" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/cxwz_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/zhuye_selected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:text="刺绣文字"
+                    android:textColor="@color/black6"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/cxwz_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <EditText
+                    android:id="@+id/cxwz_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textfield_multiline_default_holo_light"
+                    android:cursorVisible="true"
+                    android:gravity="center_horizontal"
+                    android:hint="姓名、座右铭等,最多16个字"
+                    android:inputType="text"
+                    android:maxLength="16"
+                    android:textColorHint="@color/black6"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/cxys_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/zhuye_selected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:text="刺绣颜色"
+                    android:textColor="@color/black6"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                 android:id="@+id/cxys_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/white" >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fastScrollEnabled="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/cxzt_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/zhuye_selected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:text="刺绣字体"
+                    android:textColor="@color/black6"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                 android:id="@+id/cxzt_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/white" >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fastScrollEnabled="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ok_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/fk_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_red_bg_1"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="付款"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

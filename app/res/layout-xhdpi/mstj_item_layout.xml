@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/zhuye_bg"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/mstj_item_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mstj_item_image"
+        android:layout_alignTop="@+id/mstj_item_image"
+        android:layout_toRightOf="@+id/mstj_item_image" >
+
+        <TextView
+            android:id="@+id/mstj_mingzi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/heise"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/mstj_sj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/mstj_mingzi"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/hongse"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mstj_yj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/mstj_sj"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/huise"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mstj_yrgm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mstj_sj"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/huise"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

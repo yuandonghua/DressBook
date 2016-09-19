@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="提示"
+        android:textColor="@color/black4"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="      我们的商品均来自于天猫、京东、唯品会等各大知名电商，价格、款式偶有变动，为避免商品金额、快递费有偏差，我们需要几分钟审核商品信息，请您稍等."
+        android:textColor="@color/black4"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/line_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="10dp"
+        android:background="@color/black9" />
+
+    <ImageView
+        android:id="@+id/line_2"
+        android:layout_width="1px"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line_1"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black9" />
+
+    <TextView
+        android:id="@+id/wzdl"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line_1"
+        android:layout_toLeftOf="@+id/line_2"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="@color/zhuye_selected"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/bzts"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line_1"
+        android:layout_toRightOf="@+id/line_2"
+        android:gravity="center"
+        android:text="不再提示"
+        android:textColor="@color/black7"
+        android:textSize="14sp" />
+
+</RelativeLayout>

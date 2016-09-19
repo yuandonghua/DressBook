@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <!-- 头像 -->
+
+    <cn.dressbook.ui.view.CircleImageView2
+        android:id="@+id/adviser_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+    <!-- 昵称 -->
+
+    <TextView
+        android:id="@+id/adviser_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/adviser_head"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/adviser_head"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <!-- 介绍 -->
+
+    <TextView
+        android:id="@+id/adviser_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/adviser_head"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/ll_check"
+        android:layout_toRightOf="@+id/adviser_head"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/huise"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_check"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <cn.dressbook.ui.view.NoTouchCheckBox
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/radiobutton_selector_1"
+            android:checked="false"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- 作品展示 -->
+    <!--
+    <LinearLayout
+        android:id="@+id/adviser_works"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/adviser_works_one"
+            android:layout_width="fill_parent"
+            android:layout_height="260dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/adviser_works_two"
+            android:layout_width="fill_parent"
+            android:layout_height="260dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhuye_bg" >
+
+    <!-- 顶部导航 -->
+
+    <include
+        android:id="@+id/main_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/top" />
+
+    <!-- 定制 -->
+
+    <RelativeLayout
+        android:id="@+id/adviser_content_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_bottom"
+        android:layout_below="@+id/main_top"
+        android:visibility="visible" >
+
+        <fragment
+            android:name="cn.dressbook.ui.fragment.DingZhiFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <!-- 买手 -->
+
+    <RelativeLayout
+        android:id="@+id/buyer_content_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_bottom"
+        android:layout_below="@+id/main_top"
+        android:visibility="gone" >
+
+        <fragment
+            android:name="cn.dressbook.ui.fragment.BuyerFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <!-- 发现 -->
+
+    <RelativeLayout
+        android:id="@+id/find_content_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_bottom"
+        android:layout_below="@+id/main_top"
+        android:visibility="gone" >
+
+        <fragment
+            android:name="cn.dressbook.ui.fragment.FaXianFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <!-- 个人中心 -->
+
+    <RelativeLayout
+        android:id="@+id/my_content_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_bottom"
+        android:layout_below="@+id/main_top"
+        android:visibility="gone" >
+
+        <fragment
+            android:id="@+id/myfragment"
+            android:name="cn.dressbook.ui.fragment.MyFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <!-- 底部导航 -->
+
+    <include
+        android:id="@+id/main_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_layout" />
+
+</RelativeLayout>

@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.dressbook.ui"
+    android:versionCode="293"
+    android:versionName="2.9.3" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <!-- 【可选】如果需要设置前台是否显示通知，需要设置这个权限 -->
+
+
+    <!-- 可选 -->
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 友盟统计分析工具错误报告权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 拨打电话 -->
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于评论模块分享位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于评论模块分享位置信息 -->
+    <permission
+        android:name="oem.permission.SENDMAIL"
+        android:protectionLevel="normal" />
+    <!-- 添加对屏幕多分辨率的支持 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    <!-- 获取通讯录 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 接收短信 -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
+    <!-- 发送短信 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 读取短信 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 写短信 -->
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+
+    <application
+        android:name="cn.dressbook.app.DressBookApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo6"
+        android:label="穿衣典"
+        android:theme="@style/No_Title_AppTheme" >
+
+        <!-- 修改参数界面 -->
+        <activity
+            android:name=".XiuGaiCanShuActivity"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <!-- 扫一扫工界面 -->
+        <activity android:name=".SaoYiSaoActivity" />
+        <!-- 增加员工界面 -->
+        <activity android:name=".AddYuanGongActivity" />
+        <!-- 员工列表界面 -->
+        <activity android:name=".YuanGongActivity" />
+        <!-- 店铺列表界面 -->
+        <activity android:name=".DianPuListActivity" />
+        <!-- 营收记录界面 -->
+        <activity android:name=".YingShouYiJiLuActivity" />
+        <!-- 店家管理界面 -->
+        <activity android:name=".DianJiaGuanLiActivity" />
+        <!-- 体征数据界面 -->
+        <activity android:name=".TZSJActivity" />
+        <!-- 提现记录界面 -->
+        <activity android:name=".TiXianJiLuActivity" />
+        <!-- 预期收入界面 -->
+        <activity android:name=".YQSRActivity" />
+        <!-- 补充信息界面 -->
+        <activity
+            android:name=".BCXXActivity"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <!-- DIY界面 -->
+        <activity
+            android:name=".TiaoZhengXiJieActivity"
+            android:theme="@style/No_Title_AppTheme" />
+        <!-- 定制商品界面 -->
+        <activity android:name=".DZSPActivity" />
+        <!-- 量身定制分类界面 -->
+        <activity android:name=".LSDZFLActivity" />
+        <!-- 量身定制界面 -->
+        <activity android:name=".LSDZActivity" />
+        <!-- 种类定制界面 -->
+        <activity android:name=".ZldzActivity" />
+        <!-- 店家收钱 -->
+        <activity android:name="cn.dressbook.ui.DJSQActivity" />
+        <!-- 业绩提成 -->
+        <activity android:name=".YJTCActivity" />
+        <!-- 编辑支付宝 -->
+        <activity android:name=".BJZFBActivity" />
+        <!-- 生活照界面 -->
+        <activity android:name=".AiTaoBaoActivity" />
+        <!-- 生活照界面 -->
+        <activity android:name=".ShengHuoZhaoActivity" />
+        <!-- 招商界面 -->
+        <activity android:name=".WangYeActivity" />
+        <!-- 选择地址界面 -->
+        <activity android:name=".XuanZeDiZhiActivity" />
+        <!-- 申请顾问师界面 -->
+        <activity android:name=".ShenQingActivity" />
+        <!-- 试衣收藏详情界面 -->
+        <activity android:name=".TryOnInfo2Activity" />
+        <!-- 提现界面 -->
+        <activity android:name=".TXActivity" />
+        <!-- 我的客户界面 -->
+        <activity android:name=".WDKHActivity" />
+        <activity
+            android:name=".AixinjuanyiHomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ProjectDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".AiXinJiLuActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustResize" />
+        <activity
+            android:name=".MeitanHomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name=".FaBoWenActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" />
+        <activity
+            android:name=".view.crop.CropImageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserHomepageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PhotoShowActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BoWenZhengWenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MeitanInputActivityTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".WriteCommentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <!-- 顾问师界面 -->
+        <activity
+            android:name="cn.dressbook.ui.GuWenShiActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 消息中心界面 -->
+        <activity
+            android:name=".MessageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 推荐详情界面 -->
+        <activity
+            android:name=".RecommendInfotActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 需求详情界面 -->
+        <activity
+            android:name=".RequirementInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 商品详情 -->
+        <activity
+            android:name=".ProductDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MeitanInputActivityTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 搜索结果界面 -->
+        <activity
+            android:name=".SearchResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MeitanInputActivityTheme"
+            android:windowSoftInputMode="stateUnspecified|adjustResize" />
+        <!-- 搜索服装界面 -->
+        <activity
+            android:name=".WoBangTaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 支付宝回调界面 -->
+        <activity
+            android:name="cn.dressbook.ui.apshare.ShareEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 指定顾问推荐 -->
+        <activity
+            android:name=".FindAdviserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 试穿界面 -->
+        <activity
+            android:name=".TryOnInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 美衣讯链接界面 -->
+        <activity
+            android:name=".MYXLinkActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 美衣讯界面 -->
+        <activity
+            android:name=".MYXActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 衣保会员界面 -->
+        <activity
+            android:name=".HuiYuanTuiJianActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 测试结果界面 -->
+        <activity
+            android:name=".DiagnoseResultActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 衣扣界面 -->
+        <activity
+            android:name=".YKLinkActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 衣保银行界面 -->
+        <activity
+            android:name=".YBJHActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 友盟key -->
+        <meta-data            android:name="UMENG_APPKEY"            android:value="52de28b656240bce750144fa" >        </meta-data>
+        <meta-data            android:name="UMENG_MESSAGE_SECRET"            android:value="913e9751254aad4444cd16e02af9d9c9" >        </meta-data>
+
+        <!-- 渠道 -->
+        <meta-data            android:name="UMENG_CHANNEL"            android:value="guanwang" >        </meta-data>
+
+        <!-- 启动界面 -->
+        <activity
+            android:name="cn.dressbook.ui.StartActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data
+                    android:host="cn.dressbook.ui"
+                    android:scheme="http" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 试衣收藏 -->
+        <activity
+            android:name=".TryOnCollectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 商品链接 -->
+        <activity
+            android:name=".ShangPinXiangQingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MeitanInputActivityTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <!-- 商品链接 -->
+        <activity
+            android:name=".ProductLinkActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 量身推荐 -->
+        <activity
+            android:name=".ZhiNengTuiJianActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 顾问师 -->
+        <activity
+            android:name=".AdviserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 搜索 -->
+        <activity
+            android:name=".FindActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 量体数据 -->
+        <activity
+            android:name=".ZhenDuanLTActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 生活照 -->
+        <activity
+            android:name=".LifePhotosActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 体征数据 -->
+        <activity
+            android:name=".SetBodyDataActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 诊断量体 -->
+        <activity
+            android:name=".ZDLTActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 基础资料 -->
+        <activity
+            android:name=".JiChuZiLiaoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 支付衣保金 -->
+        <activity
+            android:name=".PayYBJActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 物流界面 -->
+        <activity
+            android:name=".LogisticsInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 申请售后界面 -->
+        <activity
+            android:name=".ApplyAfterSaleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 我的订单界面 -->
+        <activity
+            android:name=".WoDeDingDanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 订单详情界面 -->
+        <activity
+            android:name=".OrderInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 支付方式界面 -->
+        <activity
+            android:name=".PaymentModeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 提交订单界面 -->
+        <activity
+            android:name=".QueRenDingDanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MeitanInputActivityTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 购物车界面 -->
+        <activity
+            android:name=".ShoppingCartActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 更多操作界面 -->
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 用户使用协议界面 -->
+        <activity
+            android:name=".UseAgreementActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 裁剪头像界面 -->
+        <activity
+            android:name=".CutHeadActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 编辑收货地址界面 -->
+        <activity
+            android:name=".EditAddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 添加收货地址界面 -->
+        <activity
+            android:name=".AddAddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 管理收货地址界面 -->
+        <activity
+            android:name=".GuanLiShouHuoDiZhi"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 爱心捐衣界面 -->
+        <activity
+            android:name=".AiXinActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 定制服装界面 -->
+        <activity
+            android:name=".DZFZActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 评价买手界面 -->
+        <activity
+            android:name=".EvaluateBuyerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 发布需求界面 -->
+        <activity
+            android:name=".PublishRequirementActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MeitanInputActivityTheme"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <!-- 推荐商品详情 -->
+        <activity
+            android:name=".RecomendProductActivity"
+            android:screenOrientation="portrait" />
+        <!-- 推荐结果 -->
+        <activity
+            android:name=".RecommendActivity"
+            android:screenOrientation="portrait" />
+        <!-- 衣保计划 -->
+        <activity
+            android:name=".YBJHLinkActivity"
+            android:screenOrientation="portrait" />
+        <!-- 用户帮助 -->
+        <activity
+            android:name=".UserHelpActivity"
+            android:screenOrientation="portrait" />
+        <!-- 交易记录 -->
+        <activity
+            android:name=".JiaoYiJiLuActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改支付宝昵称 -->
+        <activity
+            android:name=".EditZFBNameActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 修改支付宝账号 -->
+        <activity
+            android:name=".EditZFBAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 修改昵称 -->
+        <activity
+            android:name=".EditNameActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- 我的邀请码 -->
+        <activity
+            android:name=".InviteNumberActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 资产中心 -->
+        <activity
+            android:name=".ZhangHaoGuanLiActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 资产中心 -->
+        <activity
+            android:name=".YKActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 退保 -->
+        <activity
+            android:name=".QuitYBJActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 用户反馈 -->
+        <activity
+            android:name=".UserFeedbackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 描绘头发 -->
+        <activity
+            android:name=".DescribeHeadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 裁剪头像 -->
+        <activity
+            android:name=".PhotoCropActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 扣头处理 -->
+        <activity
+            android:name=".DescribeFaceNeckActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 买手推荐详情 -->
+        <activity
+            android:name="cn.dressbook.ui.MSTJItemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 买手推荐条目 -->
+        <activity
+            android:name="cn.dressbook.ui.MSTJXQActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 咨询推荐 -->
+        <activity
+            android:name="cn.dressbook.ui.ZiXunTuiJianActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 支付 -->
+        <activity
+            android:name="cn.dressbook.ui.ZhiFuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 逛逛视频 -->
+        <activity
+            android:name="cn.dressbook.ui.GGShiPinActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 逛逛的方案详情界面 -->
+        <activity
+            android:name="cn.dressbook.ui.GGAttireActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 创建形象-性别activity -->
+        <activity
+            android:name="cn.dressbook.ui.BodyData0Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 创建形象-拍照引导activity -->
+        <activity
+            android:name="cn.dressbook.ui.SetImageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 系统相机activity -->
+        <activity
+            android:name="cn.dressbook.ui.SystemCameraActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 社区activity -->
+        <activity
+            android:name="cn.dressbook.ui.SheQuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 活动界面 -->
+        <activity
+            android:name="cn.dressbook.ui.HuoDongActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 主界面 -->
+        <activity
+            android:name="cn.dressbook.ui.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 明星照片 -->
+        <activity
+            android:name="cn.dressbook.ui.MingXingZhaoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 拍照攻略 -->
+        <activity
+            android:name="cn.dressbook.ui.PaiZhaoGongLueActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 着装测试 -->
+        <activity
+            android:name="cn.dressbook.ui.FuSeZhenDuanActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 邀请参与集结号 -->
+        <activity
+            android:name="cn.dressbook.ui.YaoQingCanYuJJHActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 选腿长 -->
+        <activity
+            android:name="cn.dressbook.ui.BodyData1_2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 拍照引导页面 -->
+        <activity
+            android:name="cn.dressbook.ui.CameraYinDaoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 设计师 -->
+        <activity
+            android:name="cn.dressbook.ui.DesignerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 头像预处理 -->
+        <activity
+            android:name="cn.dressbook.ui.HeadResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 测试 -->
+        <activity
+            android:name="com.hello.hello.HelloActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心 -->
+        <activity
+            android:name="cn.dressbook.ui.IndividualCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 创建形象引导 -->
+        <activity
+            android:name="cn.dressbook.ui.XingXiangYinDaoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 着装指南 -->
+        <activity
+            android:name="cn.dressbook.ui.ZhuoZhuangZhiNanActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 形象 -->
+        <activity
+            android:name="cn.dressbook.ui.XingXiangGuanActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 选择性别 -->
+        <activity
+            android:name="cn.dressbook.ui.SelectSexActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 头像导航 -->
+        <activity
+            android:name="cn.dressbook.ui.TouXiangDHActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 正在拍照 -->
+        <activity
+            android:name="cn.dressbook.ui.CameraActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 展示拍照的图片 -->
+        <activity
+            android:name="cn.dressbook.ui.ShowPicActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 完善数据 -->
+        <activity
+            android:name="cn.dressbook.ui.BodyData1Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 更多数据 -->
+        <activity
+            android:name="cn.dressbook.ui.BodyData2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 选择体型 -->
+        <activity
+            android:name="cn.dressbook.ui.SelectShapeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 方案详情 -->
+        <activity
+            android:name="cn.dressbook.ui.SchemeDedailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 单个方案展示 -->
+        <activity
+            android:name="cn.dressbook.ui.AttireSchemeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 注册 -->
+        <activity
+            android:name="cn.dressbook.ui.ZhuCeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 登陆 -->
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- 分享界面 -->
+        <activity
+            android:name=".MyShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- 形象名称 -->
+        <activity
+            android:name="cn.dressbook.ui.XingXiangNameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 展示单个设计师 -->
+        <activity
+            android:name="cn.dressbook.ui.AdviserDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 填写订单 -->
+        <activity
+            android:name="cn.dressbook.ui.OrderFormActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 填写收货信息 -->
+        <activity
+            android:name="cn.dressbook.ui.ShouHuoXinXiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 选择支付方式 -->
+        <activity
+            android:name="cn.dressbook.ui.ModeOfPayMentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 订单结果 -->
+        <activity
+            android:name="cn.dressbook.ui.OrderFormResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 选择收货信息 -->
+        <activity
+            android:name="cn.dressbook.ui.SelectShouHuoXinXiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 订单详情 -->
+        <activity
+            android:name="cn.dressbook.ui.MyOrderFormActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 找回密码 -->
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- 导航页 -->
+        <activity
+            android:name="cn.dressbook.ui.GuideActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 账户管理 -->
+        <activity
+            android:name="cn.dressbook.ui.ZhangHuGuanLiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 修改密码 -->
+        <activity
+            android:name=".EditPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- 顾问沟通 -->
+        <activity
+            android:name="cn.dressbook.ui.GuWenGouTongActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- 订单详情界面 -->
+        <activity
+            android:name="cn.dressbook.ui.OrderFormDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 单品大图展示界面 -->
+        <activity
+            android:name="cn.dressbook.ui.ProductDetailLargePictureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 形象编辑界面 -->
+        <activity
+            android:name="cn.dressbook.ui.BianJiXingXiangActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 相册选择图片 -->
+        <activity
+            android:name="cn.dressbook.ui.XiangCeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 修改昵称 -->
+        <activity
+            android:name="cn.dressbook.ui.XiuGaiNiChengActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 集结号 -->
+        <activity
+            android:name="cn.dressbook.ui.JiJieHaoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 发起集结 -->
+        <activity
+            android:name="cn.dressbook.ui.FaQiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 参与集结 -->
+        <activity
+            android:name="cn.dressbook.ui.CanYuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 集结号图片 -->
+        <activity
+            android:name="cn.dressbook.ui.JJHInformationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 集结详情 -->
+        <activity
+            android:name="cn.dressbook.ui.JiJieXQActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 选择形象 -->
+        <activity
+            android:name="cn.dressbook.ui.SelectXingXiangActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 选择方案 -->
+        <activity
+            android:name="cn.dressbook.ui.SelectAttireSchemeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 消息中心 -->
+        <activity
+            android:name="cn.dressbook.ui.SystemMessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.dressbook.ui.RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- 微信 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100556680" />
+            </intent-filter>
+        </activity>
+        <!-- 获取联系人服务 -->
+        <service android:name="cn.dressbook.ui.service.GetContactsService" >
+        </service>
+        <service android:name="cn.dressbook.ui.service.DownLoadingService" />
+        <service android:name="cn.dressbook.ui.service.ImageProcessingService" />
+
+        <receiver
+            android:name=".receiver.DownloadReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="startDownload" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="likaicyd" />
+                <action android:name="home" />
+            </intent-filter>
+        </receiver>
+        <!-- 社会化分享 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <!-- 腾讯QQ与QQ空间SSO授权的Activity注册 -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 友盟自动更新 -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!-- 友盟推送 -->
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.SystemReceiver"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.MessageReceiver"
+            android:exported="false"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.ElectionReceiver"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_RESULT_V4" />
+
+                <category android:name="umeng" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.RegistrationReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.dressbook.ui.intent.action.COMMAND" />
+            </intent-filter>
+        </receiver>
+        <!-- Umeng的消息路由服务 -->
+        <service
+            android:name="com.umeng.message.UmengMessageIntentReceiverService"
+            android:exported="true"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.android.agoo.client.ElectionReceiverService" />
+            </intent-filter>
+        </service>
+
+        <!-- v2.4.1添加的Service，Umeng的消息接收后的处理服务 -->
+        <service
+            android:name="com.umeng.message.UmengMessageCallbackHandlerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.umeng.messge.registercallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.unregistercallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.message.handler.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.autoupdate.handler.action" />
+            </intent-filter>
+        </service>
+
+        <!-- V1.3.0添加的service，负责下载通知的资源 -->
+        <service android:name="com.umeng.message.UmengDownloadResourceService" />
+
+        <!-- V2.5.0添加的Service，用于本地通知 -->
+        <!-- 如果不使用本地通知，可以注释掉本地通知服务的配置 -->
+        <service
+            android:name="com.umeng.message.local.UmengLocalNotificationService"
+            android:exported="false" />
+        <service
+            android:name="com.umeng.message.UmengService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="cn.dressbook.ui.intent.action.START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cn.dressbook.ui.intent.action.COCKROACH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING_V4" />
+
+                <category android:name="umeng" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.umeng.message.RegistrationReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.dressbook.ui.intent.action.COMMAND" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.UmengMessageBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="cn.dressbook.ui.NotificationService" >
+        </service>
+        <service
+            android:name="com.umeng.message.UmengIntentService"
+            android:process=":push" />
+
+        <!-- If you donot want to use the standard notification bar in SDK, you can define IntentService instead to handle message. -->
+        <service
+            android:name="cn.dressbook.ui.service.MyPushIntentService"
+            android:process=":push" />
+        <service android:name="com.umeng.message.UmengDownloadResourceService" >
+        </service>
+
+        <!-- 淘宝 -->
+        <activity android:name="com.alibaba.sdk.android.trade.ui.TradeWebViewActivity" >
+            <intent-filter>
+                <action android:name="COM_TAOBAO_TAE_SDK_TRADE_WEB_VIEW_ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alibaba.sdk.android.trade.ui.NativeTaobaoClientActivity"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="23052432.nativeTaobao"
+                    android:scheme="alisdk" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity android:name="com.alibaba.sdk.android.login.ui.LoginWebViewActivity" />
+        <activity android:name="com.alibaba.sdk.android.login.ui.QrLoginConfirmActivity" />
+        <activity
+            android:name="com.alibaba.sdk.android.login.ui.QrLoginActivity"
+            android:theme="@style/tae_sdk_login_qr_activity_style" />
+        <activity android:name="com.alibaba.sdk.android.webview.BaseWebViewActivity" />
+
+        <receiver
+            android:name="com.alibaba.sdk.android.hotpatch.HotPatchBroadcastReceiver"
+            android:exported="false"
+            android:process=":hotpatch" >
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.hotpatch.action.HOT_PATCH" />
+            </intent-filter>
+        </receiver>
+        <!-- 淘宝 -->
+    </application>
+
+</manifest>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:su="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <cn.dressbook.ui.view.ScrollerNumberPicker3
+        android:id="@+id/year"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_weight="3"
+        android:background="@color/white"
+        su:itemNumber="5"
+        su:lineColor="#ffff6000"
+        su:maskHight="20dp"
+        su:noEmpty="true"
+        su:normalTextColor="#777"
+        su:normalTextSize="12dp"
+        su:selecredTextColor="#ff000000"
+        su:selecredTextSize="20dp"
+        su:unitHight="40dp" />
+
+    <cn.dressbook.ui.view.ScrollerNumberPicker3
+        android:id="@+id/month"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_weight="2"
+        android:background="@color/white"
+        su:itemNumber="5"
+        su:lineColor="#ffff6000"
+        su:maskHight="20dp"
+        su:noEmpty="true"
+        su:normalTextColor="#777"
+        su:normalTextSize="12dp"
+        su:selecredTextColor="#ff000000"
+        su:selecredTextSize="20dp"
+        su:unitHight="40dp" />
+
+    <cn.dressbook.ui.view.ScrollerNumberPicker3
+        android:id="@+id/day"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_weight="2"
+        android:background="@color/white"
+        su:itemNumber="5"
+        su:lineColor="#ffff6000"
+        su:maskHight="20dp"
+        su:noEmpty="true"
+        su:normalTextColor="#777"
+        su:normalTextSize="12dp"
+        su:selecredTextColor="#ff000000"
+        su:selecredTextSize="20dp"
+        su:unitHight="40dp" />
+
+</LinearLayout>

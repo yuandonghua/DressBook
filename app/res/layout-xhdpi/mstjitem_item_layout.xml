@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal" >
+
+    <!-- 显示衣服方案的view -->
+
+    <cn.dressbook.ui.view.PhotoView
+        android:id="@+id/ivt_scanImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <!-- 日期 -->
+
+    <TextView
+        android:id="@+id/fangan_rq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginRight="18dp"
+        android:textColor="@color/lanse1"
+        android:textSize="12sp" />
+    <!-- 时间 -->
+
+    <TextView
+        android:id="@+id/fanan_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/lanse1"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:id="@+id/fanan_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fangan_xqgm_iv"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/fanan_market_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/fanan_market_value"
+            android:text="原价：￥"
+            android:textColor="@color/huise"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/fanan_market_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/huise"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/fanan_shop_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fanan_market_key"
+            android:layout_alignLeft="@+id/fanan_market_key"
+            android:layout_marginBottom="5dp"
+            android:text="现价：￥"
+            android:textColor="@color/red1"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/fanan_shop_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fanan_market_value"
+            android:layout_toRightOf="@+id/fanan_shop_key"
+            android:singleLine="true"
+            android:textColor="@color/red1"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    <!-- 购买 -->
+
+    <ImageView
+        android:id="@+id/fangan_xqgm_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/xqgm" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@anim/loading2"
+        android:visibility="gone" />
+
+</RelativeLayout>

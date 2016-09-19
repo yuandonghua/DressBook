@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhuye_bg" >
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/top" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl1"
+        android:layout_below="@+id/title"
+        android:fastScrollEnabled="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black14"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/xh_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/line3"
+            android:drawableLeft="@drawable/xh_src_1"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="喜欢"
+            android:textColor="@color/black4"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black8" />
+
+        <TextView
+            android:id="@+id/pl_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/line3"
+            android:drawableLeft="@drawable/pl_src_1"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="评论"
+            android:textColor="@color/black4"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

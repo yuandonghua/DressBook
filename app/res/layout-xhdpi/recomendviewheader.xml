@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/hint_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="tips：以下为买手为您推荐的服装，请勾选您想购买的商品并点击右上角的“确定”告知买手。"
+        android:textColor="@color/zhuye_selected"
+        android:layout_centerVertical="true"
+        android:textSize="14sp" />
+
+</RelativeLayout>

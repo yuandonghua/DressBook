@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhuye_bg" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title" >
+
+        <RelativeLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/shouqian_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/shouqian_unselected" />
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/shouqian_tv"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/ygxm_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/ygxm_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="消费码:"
+                        android:textColor="@color/black4"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/xfm_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:background="@color/white"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical"
+                        android:hint="请输入客户的消费码"
+                        android:inputType="text"
+                        android:maxLength="14"
+                        android:minHeight="30dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black10"
+                        android:textCursorDrawable="@null"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/sys_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/xfm_et"
+                        android:layout_alignRight="@+id/xfm_et"
+                        android:layout_alignTop="@+id/xfm_et"
+                        android:src="@drawable/sys_src_1" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/black12" />
+
+                <RelativeLayout
+                    android:id="@+id/ygsjh_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/ygsjh_key"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="店    铺:"
+                        android:textColor="@color/black4"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/dp_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:background="@color/white"
+                        android:drawableRight="@drawable/xiala"
+                        android:hint="请选择店铺"
+                        android:singleLine="true"
+                        android:textColor="@color/black4"
+                        android:textColorHint="@color/black10"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:layout_marginTop="8dp" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fastScrollEnabled="true" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hint_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:text="加盟穿衣典，开自己的定制店，成就财富人生"
+        android:visibility="gone" />
+
+</RelativeLayout>

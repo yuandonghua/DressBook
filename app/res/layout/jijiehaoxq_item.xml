@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/touming" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/jjhxq_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="袁东华"
+            android:textColor="@color/qingse"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/jjhxq_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/jjhxq_name"
+            android:layout_below="@+id/jjhxq_name"
+            android:layout_marginTop="10dp"
+            android:text="这集结号真不错"
+            android:textColor="@color/heise"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/jjhxq_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/jjhxq_name"
+            android:layout_alignBottom="@+id/jjhxq_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="5月29日   10：55"
+            android:textColor="@color/huise"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

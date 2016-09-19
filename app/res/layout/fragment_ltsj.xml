@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ltAll_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/zhuye_bg"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="7" >
+
+        <!-- 上半部分 -->
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            layout="@layout/lt_top" />
+        <!-- 下班部分 选择与输入部分 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <!-- 中间选择身体部位 -->
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                layout="@layout/xz_ltbw" />
+
+            <!-- 输入部分 -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" >
+
+                <!-- 性别和形状的选择布局 -->
+
+                <include
+                    android:id="@+id/optionJP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/lt_sr_1"
+                    android:visibility="gone" />
+                <!-- 出生日期的选择布局 -->
+
+                <include
+                    android:id="@+id/dateJP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/lt_sr_2"
+                    android:visibility="gone" />
+                <!-- 剩余部分如身高,体重,输入布局 -->
+
+                <include
+                    android:id="@+id/valueJP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/lt_sr_3"
+                    android:visibility="visible" />
+
+                <!-- 遮挡区域 -->
+
+                <TextView
+                    android:id="@+id/zheDang_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

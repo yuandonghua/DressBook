@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:orientation="horizontal" >
+
+    <!-- 上一个按钮 -->
+
+    <ImageView
+        android:id="@+id/last_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_ltsj_jp"
+        android:src="@drawable/shangyige" />
+    <!-- 左侧展示的view -->
+
+    <LinearLayout
+        android:id="@+id/last_ll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lastTitle_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/lastContent_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/lastDanWei_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13dp" />
+    </LinearLayout>
+    <!-- 中间展示的View -->
+
+    <LinearLayout
+        android:id="@+id/current_ll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/currentTitle_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/bj_1"
+            android:gravity="center"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/currentContent_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/currentDanWei_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/bj_2"
+            android:gravity="center"
+            android:textSize="13dp" />
+    </LinearLayout>
+    <!-- 右边展示的View -->
+
+    <LinearLayout
+        android:id="@+id/next_ll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nextTitle_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/nextContent_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/nextDanWei_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <!-- 下一个按钮 -->
+
+    <ImageView
+        android:id="@+id/next_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:background="@drawable/selector_ltsj_jp"
+        android:src="@drawable/xiayige" />
+
+</LinearLayout>

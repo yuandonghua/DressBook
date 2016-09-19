@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:clipToPadding="false" />
+
+    <cn.dressbook.ui.view.VerticalSeekBar
+        android:id="@+id/left_sb"
+        android:layout_width="wrap_content"
+        android:layout_height="250dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:max="5"
+        android:progress="0"
+        android:progressDrawable="@drawable/seekbar_style_4"
+        android:thumb="@drawable/seekbar_slider_2"
+        android:thumbOffset="-10dp"
+        android:visibility="visible" />
+
+    <cn.dressbook.ui.view.VerticalSeekBar
+        android:id="@+id/right_sb"
+        android:layout_width="wrap_content"
+        android:layout_height="250dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:max="5"
+        android:progress="0"
+        android:progressDrawable="@drawable/seekbar_style_4"
+        android:thumb="@drawable/seekbar_slider_2"
+        android:thumbOffset="-10dp"
+        android:visibility="visible" />
+
+</RelativeLayout>

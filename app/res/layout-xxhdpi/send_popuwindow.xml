@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/popu_rl"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="2dip"
+        android:paddingTop="2dip" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black12" />
+
+        <RelativeLayout
+            android:id="@+id/edittext_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:id="@+id/tp_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/xx_et"
+                android:layout_alignTop="@+id/xx_et"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/addimage_src_1"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/bq_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/xx_et"
+                android:layout_alignTop="@+id/xx_et"
+                android:layout_toRightOf="@+id/tp_iv"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/bq_src_1"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/xx_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/fs_tv"
+                android:layout_toRightOf="@+id/bq_iv"
+                android:background="@drawable/edit_bg_3"
+                android:cursorVisible="true"
+                android:gravity="center_vertical"
+                android:maxLength="144"
+                android:maxLines="4"
+                android:minHeight="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black5"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/fs_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/xx_et"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/xx_et"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="发送"
+                android:textColor="@color/red1"
+                android:textSize="16sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fastScrollEnabled="true"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

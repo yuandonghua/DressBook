@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/popu_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rl_bg_1"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/xzpl_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="选择品类"
+            android:textColor="@color/black4"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xzpl_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/nz_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_bg_5"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="男装"
+                android:textColor="@color/black4"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/nvz_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textview_bg_5"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="女装"
+                android:textColor="@color/black4"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pl_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ll1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="品类"
+            android:textColor="@color/black4"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview1"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/ll1"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/pl_tv"
+            android:fastScrollEnabled="true" />
+
+        <TextView
+            android:id="@+id/xl_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/recyclerview1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="细类"
+            android:textColor="@color/black4"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview2"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/recyclerview1"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/xl_tv"
+            android:fastScrollEnabled="true" />
+
+        <TextView
+            android:id="@+id/ok_tv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/recyclerview2"
+            android:background="@drawable/textview_red_bg_1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

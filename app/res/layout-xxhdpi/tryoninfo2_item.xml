@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/share_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/share_src_2"
+        android:text="分享"
+        android:textColor="@color/black4"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/delete_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@+id/share_tv"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/delete_src_4"
+        android:text="删除"
+        android:textColor="@color/black4"
+        android:textSize="10sp" />
+
+    
+
+</RelativeLayout>

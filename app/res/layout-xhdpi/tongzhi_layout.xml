@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/improvedata_dialog_border"
+    android:paddingBottom="20dp">
+
+
+        <TextView
+            android:id="@+id/tzts_tishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="15dp"
+            android:text="系统消息"
+            android:textColor="@color/qingse" />
+
+        <ImageView
+            android:id="@+id/tzts_fengexian"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tzts_tishi"
+            android:background="@drawable/tianchuchuang_fenggexian" />
+
+        <TextView
+            android:id="@+id/tzts_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tzts_fengexian"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:text="如果您对此形象不满意，可以选择工人编辑美化形象"
+            android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/tzts_ok__btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/qingse"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp" 
+        android:paddingRight="10dp"
+        android:layout_below="@+id/tzts_content"
+        android:layout_centerHorizontal="true"
+        android:text="我知道了"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp" 
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

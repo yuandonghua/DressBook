@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhuye_bg" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/top" />
+
+    <ListView
+        android:id="@+id/xxzx_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title"
+        android:layout_margin="10dp"
+        android:background="@color/touming"
+        android:cacheColorHint="@color/touming"
+        android:divider="@color/touming"
+        android:dividerHeight="10dp"
+        android:fadingEdge="none"
+        android:listSelector="@color/touming"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/xxts_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无消息"
+        android:textColor="@color/qingse"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/hint_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无系统消息"
+        android:visibility="gone" />
+
+</RelativeLayout>

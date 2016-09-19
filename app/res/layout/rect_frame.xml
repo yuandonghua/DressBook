@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:id="@+id/rect_frame_widget" >
+
+    <cn.dressbook.ui.general.FotoCut.view.ui.RectFrame
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- <ImageView
+            android:id="@+id/frame_play_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/play_btn_selector" />
+
+        <ImageView
+            android:id="@+id/top_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/moveicon" />
+
+        <ImageView
+            android:id="@+id/bottom_left"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/moveicon" /> -->
+
+        <ImageView
+            android:id="@+id/bottom_right"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/moveicon" />
+        
+        <!-- <ImageView
+            android:id="@+id/frame_position"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/moveicon"/> -->
+    </RelativeLayout>
+
+</FrameLayout>

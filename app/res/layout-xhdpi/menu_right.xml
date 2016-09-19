@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_bottom"
+        android:visibility="visible" />
+
+    <!-- <RelativeLayout
+        android:id="@+id/myb_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_bottom"
+        android:visibility="gone" >
+
+        美衣帮顶部导航
+
+        <RelativeLayout
+            android:id="@+id/myb_top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bt_bg" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal" >
+
+                衣粉
+
+                <RelativeLayout
+                    android:id="@+id/myb_yf_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/myb_yf_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="衣粉"
+                        android:textColor="@color/zhuye_selected"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/fy_num_tv"
+                        style="@style/DemoMainNewMassage"
+                        android:layout_marginRight="7dp"
+                        android:paddingBottom="2dp"
+                        android:text="19"
+                        android:textColor="@color/zhuye_selected"
+                        android:visibility="gone" />
+                </RelativeLayout>
+                顾问
+
+                <RelativeLayout
+                    android:id="@+id/myb_adviser_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/myb_adviser_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="顾问"
+                        android:textColor="@color/zhuye_unselected"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+                买手
+
+                <RelativeLayout
+                    android:id="@+id/myb_buyer_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/myb_buyer_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="买手"
+                        android:textColor="@color/zhuye_unselected"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/buyer_num_tv"
+                        style="@style/DemoMainNewMassage"
+                        android:layout_marginRight="7dp"
+                        android:paddingBottom="2dp"
+                        android:text="19"
+                        android:textColor="@color/zhuye_selected"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+            导航底部滑线
+
+            <ImageView
+                android:id="@+id/myb_switch_img"
+                style="@style/DemoMainPublic"
+                android:layout_marginLeft="50dp" />
+        </RelativeLayout>
+        美衣帮顶部导航的内容的ViewPager
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/myb_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/myb_top_rl"
+            android:layout_gravity="center"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </RelativeLayout> -->
+
+    <include
+        android:id="@+id/main_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_layout" />
+
+</RelativeLayout>

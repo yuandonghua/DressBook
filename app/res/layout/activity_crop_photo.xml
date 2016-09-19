@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/black_ground" 
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:paddingLeft="10dp"
+            android:src="@drawable/fh" />
+
+        <ImageView
+            android:id="@+id/crop_back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/crop_save"
+            style="@style/font_next_20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/next" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/crop"
+            android:textColor="@color/gray_time"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout1"
+        android:background="@color/main_black" >
+
+        <ImageView
+            android:id="@+id/sample_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true" />
+
+        <include layout="@layout/select_frame" />
+    </FrameLayout>
+
+        <!--  RelativeLayout  android:id="@+id/choose"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true" >
+
+            <TextView
+                android:id="@+id/video"
+                style="@style/font_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="15dp"
+                android:text="@string/video" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/cinemagraph"
+                style="@style/font_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:layout_alignParentRight="true"
+                android:text="@string/cinemagraph" >
+            </TextView>
+        </RelativeLayout-->
+
+</RelativeLayout>

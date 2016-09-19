@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <ImageView
+        android:id="@+id/ivItemUploadPhotos"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:padding="1.5dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/ivItemUploadPhotosDelete"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="1.5dp"
+        android:layout_marginTop="1.5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_red_tiny_delete" />
+
+</RelativeLayout>

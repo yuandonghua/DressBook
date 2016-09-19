@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cyd_wc_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/white"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/xsk_pbl_item_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/xsk_pbl_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xsk_pbl_item_iv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/xsk_pbl_item_price"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/heise"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/xsk_pbl_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/xsk_pbl_item_iv"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/hongse"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:id="@+id/xsk_pbl_item_pb"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@anim/loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

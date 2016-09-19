@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@color/zhuye_bg">
+
+    <RelativeLayout
+        android:id="@+id/xst_rl"
+        android:layout_width="100dp"
+        android:layout_height="162dp"
+        android:layout_margin="5dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/ceshi" >
+
+        <ImageView
+            android:id="@+id/xst_xsttupian"
+            android:layout_width="100dp"
+            android:layout_height="150dp" 
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

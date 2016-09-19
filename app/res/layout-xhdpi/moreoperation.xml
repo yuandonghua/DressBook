@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhuye_bg" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:orientation="vertical" >
+
+        <!-- 清理缓存 -->
+
+        <RelativeLayout
+            android:id="@+id/clearcache_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/grzx_xxzx_rl_iv"
+                android:text="清理缓存"
+                android:textColor="@color/black4"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/grzx_xxzx_rl_iv_jt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/grzx_xxzx_rl_iv"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/grzx_item_jt" />
+        </RelativeLayout>
+
+        <!-- 检查更新 -->
+
+        <RelativeLayout
+            android:id="@+id/jcgx_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/grzx_jcgx_rl_iv"
+                android:text="检查更新"
+                android:textColor="@color/black4"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/grzx_jcgx_rl_iv_jt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/grzx_jcgx_rl_iv"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/grzx_item_jt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yhfk_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="用户反馈"
+                android:textColor="@color/black4"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/yhfk_jt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/grzx_item_jt" />
+        </RelativeLayout>
+
+        <!-- 关于我们 -->
+
+        <RelativeLayout
+            android:id="@+id/gywm_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/grzx_gywm_rl_iv"
+                android:text="关于我们"
+                android:textColor="@color/black4"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/grzx_gywm_rl_iv_jt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/grzx_gywm_rl_iv"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/grzx_item_jt" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

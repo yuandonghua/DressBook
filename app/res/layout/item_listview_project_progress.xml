@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp" >
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvItemProjectProgressTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/main_text_grey"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/tvItemProjectProgressContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/main_horizontal_side_offset_normal"
+                android:layout_marginTop="6dp"
+                android:text=""
+                android:textColor="@color/main_text_grey"
+                android:textSize="@dimen/text_size_medium" />
+
+            <ImageView
+                android:id="@+id/ivItemProjectProgressPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vItemVerticalLine"
+            android:layout_width="@dimen/main_grey_frame_line"
+            android:layout_height="320dp"
+            android:layout_alignParentLeft="true"
+            android:background="#808080" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llItemProjectProgressDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="24dp" >
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/shape_white_grey_stroke_circle" />
+
+        <TextView
+            android:id="@+id/tvItemProjectProgressDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/main_horizontal_side_offset_normal"
+            android:text=""
+            android:textColor="@color/main_text_grey"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+</RelativeLayout>

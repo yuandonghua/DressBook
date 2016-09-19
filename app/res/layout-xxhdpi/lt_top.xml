@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="match_parent" >
+
+        <!-- 被量体人信息 -->
+
+        <LinearLayout
+            android:id="@+id/user_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/userHead_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/userPhone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/userName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="11dp" />
+        </LinearLayout>
+        <!-- 开关按钮 -->
+
+        <ImageView
+            android:id="@+id/open_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/user_ll"
+            android:layout_marginTop="30dp"
+            android:paddingRight="40dp"
+            android:src="@drawable/ltcl" />
+        <!-- 量体进度 -->
+
+        <TextView
+            android:id="@+id/jinDu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:textSize="11dp" />
+    </RelativeLayout>
+    <!-- 身体部位测量提示图 -->
+
+    <ImageView
+        android:id="@+id/tiShiTu_iv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@color/white" />
+    <!-- 身体部位测量提示文本 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/find_frame" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TIPS:"
+                    android:textColor="@color/black2"
+                    android:textSize="@dimen/text_size_big" />
+
+                <TextView
+                    android:id="@+id/tiShi_tv"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:textSize="11dp" />
+            </LinearLayout>
+        </ScrollView>
+        <!-- 结束按钮 -->
+
+        <TextView
+            android:id="@+id/jieShu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/ltjieshu"
+            android:paddingBottom="8dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="8dp"
+            android:text="结束" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_grey_line"
+        android:background="@color/main_grey_line" />
+
+    <LinearLayout
+        android:id="@+id/llItemArticle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_horizontal_side_offset_normal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <cn.dressbook.ui.view.CircleImageView2
+                android:id="@+id/ivItemArticlePortrait"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvItemArticleUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/ivItemArticlePortrait"
+                android:text=""
+                android:textColor="@color/main_text_grey"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/tvItemArticleUserLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/main_horizontal_side_offset_normal"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/tvItemArticleUserName"
+                android:text=""
+                android:textColor="@color/main_text_orange"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/tvItemArticleDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textColor="@color/main_text_grey"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvItemArticleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_horizontal_side_offset_normal"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/main_text_orange"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/tvItemArticleContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_horizontal_side_offset_normal"
+            android:ellipsize="end"
+            android:maxLines="10"
+            android:text=""
+            android:textColor="@color/main_text_grey"
+            android:textSize="@dimen/text_size_small" />
+
+        <cn.dressbook.ui.view.HyperGridView
+            android:id="@+id/gvItemArticlePhotos"
+            android:layout_width="336dp"
+            android:layout_height="336dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/main_horizontal_side_offset_normal"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:visibility="visible" >
+        </cn.dressbook.ui.view.HyperGridView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_horizontal_side_offset_normal" >
+
+            <LinearLayout
+                android:id="@+id/llItemArticleReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/main_small_icon"
+                    android:layout_height="@dimen/main_small_icon"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_grey_report" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:singleLine="true"
+                    android:text="举报"
+                    android:textColor="@color/main_text_grey"
+                    android:textSize="@dimen/text_size_tiny" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llItemArticleComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/llItemArticleReport"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp" >
+
+                <ImageView
+                    android:layout_width="@dimen/main_small_icon"
+                    android:layout_height="@dimen/main_small_icon"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_grey_comment" />
+
+                <TextView
+                    android:id="@+id/tvItemArticleCommentNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/main_text_grey"
+                    android:textSize="@dimen/text_size_tiny" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llItemArticleLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/llItemArticleComment"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp" >
+
+                <ImageView
+                    android:id="@+id/ivItemArticleLike"
+                    android:layout_width="@dimen/main_small_icon"
+                    android:layout_height="@dimen/main_small_icon"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_grey_like" />
+
+                <TextView
+                    android:id="@+id/tvItemArticleLikeNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/main_text_grey"
+                    android:textSize="@dimen/text_size_tiny" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_grey_line"
+        android:background="@color/main_grey_line" />
+
+</LinearLayout>

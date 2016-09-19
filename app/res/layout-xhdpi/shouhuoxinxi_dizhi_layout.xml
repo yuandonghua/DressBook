@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/tianchuchuang" >
+
+    <ListView
+        android:id="@+id/shouhuoxinxi_dizhi_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/paixu_view"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/huise"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+    <cn.dressbook.ui.view.PaiXuView
+        android:id="@+id/paixu_view"
+        android:layout_width="30dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="#40000000" />
+
+    <TextView
+        android:id="@+id/dizhi_tishi_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/touming"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="@color/chegnse"
+        android:textSize="70sp" 
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/guwenshi_touxiang_iv"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignBottom="@+id/guwenshi_rl"
+        android:layout_alignParentLeft="true" />
+
+    <RelativeLayout
+        android:id="@+id/guwenshi_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/guwenshi_touxiang_iv"
+        android:background="@drawable/xxzx_cyd_ltbg" >
+
+        <TextView
+            android:id="@+id/guwenshi_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="left"
+            android:textColor="@color/heise"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/guwenshi_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/guwenshi_time_tv"
+            android:layout_below="@+id/guwenshi_time_tv"
+            android:autoLink="all"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="left"
+            android:linksClickable="false"
+            android:padding="10dip"
+            android:text=""
+            android:textColor="@color/heise"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

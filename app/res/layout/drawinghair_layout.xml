@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhuye_bg"
+    android:orientation="vertical"
+    tools:context="cn.dressbook.ui.general.FotoCut.GrabCutActivity" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top" />
+
+    <RelativeLayout
+        android:id="@+id/image_show_frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" >
+
+        <FrameLayout
+            android:id="@+id/image_show_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+
+            <!-- 展示头像的ImageView -->
+
+            <ImageView
+                android:id="@+id/anim_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="matrix" >
+            </ImageView>
+            <!-- 画布 -->
+
+            <cn.dressbook.ui.general.FotoCut.view.ui.MaskCanvas
+                android:id="@+id/maskCanvas_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <cn.dressbook.ui.general.FotoCut.view.ui.ScaleableView
+            android:id="@+id/touchable_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!--
+         <ImageView
+        android:id="@+id/preview_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_photo" />
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/ts_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请用下面的工具把"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ts_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[头发、面部、脖子]"
+                    android:textColor="@color/zhuye_selected"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ts_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="涂成红色"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- 画笔操作模块 -->
+
+            <ImageView
+                android:id="@+id/model_draw"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_model_draw" />
+            <!-- 手势操作模块 -->
+
+            <ImageView
+                android:id="@+id/model_move"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_model_move" />
+            <!-- 撤销模块 -->
+
+            <TextView
+                android:id="@+id/undo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/undo"
+                android:textColor="@color/text_control_selector"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- 手势操作模块内容提示 -->
+
+        <RelativeLayout
+            android:id="@+id/msg_control"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:background="@color/black_ground"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/message_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/messagetip"
+                android:textColor="@color/text_control_selector"
+                android:textSize="16dp" />
+        </RelativeLayout>
+        <!-- 画笔操作内容 -->
+
+        <LinearLayout
+            android:id="@+id/grab_control"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:background="@color/black_ground"
+            android:orientation="horizontal" >
+
+            <!-- 魔法画笔 -->
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/anim_draw_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/btn_m_brush"
+                    android:gravity="center"
+                    android:text="魔法画笔"
+                    android:textColor="@color/text_selector_white_yellow" />
+            </RelativeLayout>
+            <!-- 画笔 -->
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/anim_draw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/btn_brush"
+                    android:gravity="center"
+                    android:text="@string/blush"
+                    android:textColor="@color/text_selector_white_yellow" />
+            </RelativeLayout>
+            <!-- 魔法擦除 -->
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/anim_erase_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/btn_m_eraser"
+                    android:gravity="center"
+                    android:text="@string/magic_eraser"
+                    android:textColor="@color/text_selector_white_yellow" />
+            </RelativeLayout>
+            <!-- 擦除 -->
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/anim_erase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/btn_eraser"
+                    android:gravity="center"
+                    android:text="@string/eraser1"
+                    android:textColor="@color/text_selector_white_yellow" />
+            </RelativeLayout>
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_gravity="center" -->
+            <!-- android:layout_marginLeft="2dp" -->
+            <!-- android:layout_weight="1" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/draw_undo" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerInParent="true" -->
+            <!-- android:background="@drawable/clear_grey" -->
+            <!-- android:clickable="true" -->
+            <!-- android:gravity="center" /> -->
+            <!-- </RelativeLayout> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

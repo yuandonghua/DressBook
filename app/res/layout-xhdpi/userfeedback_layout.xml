@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhuye_bg" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top" />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/title"
+        android:layout_margin="20dp"
+        android:background="@drawable/edit_bg_1"
+        android:cursorVisible="true"
+        android:gravity="center"
+        android:hint="请描述您要反馈的意见或建议,不超过800字"
+        android:textColor="@color/black4"
+        android:textColorHint="@color/black4"
+        android:textCursorDrawable="@color/black4"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textview_red_bg_1"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

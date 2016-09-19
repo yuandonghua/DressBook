@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhuye_bg" 
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/top" />
+
+    <cn.dressbook.ui.view.MyScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fastScrollEnabled="true"
+                android:focusable="false"
+                android:horizontalSpacing="2dp"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2dp" />
+
+            <RelativeLayout
+                android:id="@+id/remark_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerview"
+                android:padding="10dp" >
+
+                <EditText
+                    android:id="@+id/remark_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/white"
+                    android:cursorVisible="true"
+                    android:gravity="top|left"
+                    android:hint="    申请退货请描述原因；申请换货请填写更换的颜色、尺寸以及收货地址信息，我们的客服会及时与您联系。"
+                    android:maxLength="100"
+                    android:minLines="4"
+                    android:padding="5dp"
+                    android:scrollHorizontally="false"
+                    android:textColor="@color/black2"
+                    android:textColorHint="@color/black8"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tj_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/remark_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="30dp"
+                android:background="@drawable/textview_red_bg_1"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </cn.dressbook.ui.view.MyScrollView>
+
+</LinearLayout>

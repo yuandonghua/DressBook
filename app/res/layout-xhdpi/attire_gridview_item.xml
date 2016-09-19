@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cyd_wc_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/jingpinguan_item_image"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp" />
+
+    <ImageView
+        android:id="@+id/yifu_ts"
+        android:layout_width="3dp"
+        android:layout_height="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="240dp"
+        android:src="@drawable/yf_ts"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/fa_item_pb"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@anim/loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

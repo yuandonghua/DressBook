@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+   	>
+
+    <cn.dressbook.ui.general.FotoCut.view.ui.SmallCircle
+        android:id="@+id/select1"
+        android:layout_width="10dp"
+        android:layout_height="10dp" 
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+    
+     <cn.dressbook.ui.general.FotoCut.view.ui.SmallCircle
+        android:id="@+id/select2"
+        android:layout_width="10dp"
+        android:layout_height="10dp" 
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+    
+	<cn.dressbook.ui.general.FotoCut.view.ui.SmallCircle	    
+	    android:id="@+id/select3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+	
+	<cn.dressbook.ui.general.FotoCut.view.ui.SmallCircle
+	     android:id="@+id/select4"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+	
+	<cn.dressbook.ui.general.FotoCut.view.ui.SmallCircle	    
+	     android:id="@+id/select5"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+	
+	<cn.dressbook.ui.general.FotoCut.view.ui.SmallCircle
+	    android:id="@+id/select6"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" />
+	
+	<cn.dressbook.ui.general.FotoCut.view.ui.SmallCircle
+	    android:id="@+id/select7"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+	
+	<cn.dressbook.ui.general.FotoCut.view.ui.SmallCircle
+	     android:id="@+id/select8"
+        android:layout_width="10dp"
+        android:layout_height="10dp" 
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

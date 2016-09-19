@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlSquare"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_background_grey"
+        android:layout_marginTop="30dp" >
+
+        <ListView
+            android:id="@+id/lvSquare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="6dp"
+            android:fadingEdge="none"
+            android:scrollbars="vertical" >
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_grey_line"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/main_grey_line" />
+
+    <cn.dressbook.ui.view.HorizontalListView
+        android:id="@+id/lvSquareTopics"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent" >
+    </cn.dressbook.ui.view.HorizontalListView>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhuye_bg" >
+
+    <cn.dressbook.ui.view.PullToRefreshView
+        android:id="@+id/refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/alljjh_mgv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/cyd_fl_ll"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:fastScrollEnabled="true"
+            android:horizontalSpacing="6dp"
+            android:listSelector="#00000000"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="6dp" />
+    </cn.dressbook.ui.view.PullToRefreshView>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@anim/loading2"
+        android:visibility="gone" />
+
+</RelativeLayout>

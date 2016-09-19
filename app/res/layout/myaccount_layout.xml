@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/zhuye_bg" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:orientation="vertical" >
+
+        <!-- 手机号 -->
+
+        <RelativeLayout
+            android:id="@+id/phone_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/phone_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号:"
+                android:textColor="@color/black4"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/phone_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/phone_key"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/phone_key"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/black1"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <!-- 昵称 -->
+
+        <RelativeLayout
+            android:id="@+id/name_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/name_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称:"
+                android:textColor="@color/black4"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/name_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/name_key"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/name_key"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/black1"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/grzx_item_jt" />
+        </RelativeLayout>
+
+       
+        
+
+        <RelativeLayout
+            android:id="@+id/shdz_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/shdz_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管理收货地址"
+                android:textColor="@color/black4"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/shdz_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/shdz_key"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/shdz_key"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/black1"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/grzx_item_jt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dlmm_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/dlmm_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改登陆密码"
+                android:textColor="@color/black4"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/dlmm_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/dlmm_key"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/dlmm_key"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/black1"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/grzx_item_jt" />
+        </RelativeLayout>
+
+        <!-- 我的邀请码 -->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/logout_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textview_red_bg_1"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@anim/loading2"
+        android:visibility="gone" />
+
+</RelativeLayout>

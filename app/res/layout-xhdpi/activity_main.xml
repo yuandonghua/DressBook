@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/main_layout_below"
+        layout="@layout/menu_left" />
+
+    <cn.dressbook.ui.view.LeftSliderLayout
+        android:id="@+id/main_slider_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:id="@+id/main_slider_main"
+            layout="@layout/menu_right" />
+    </cn.dressbook.ui.view.LeftSliderLayout>
+
+</FrameLayout>

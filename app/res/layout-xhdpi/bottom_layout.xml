@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rl_bg_white_2"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="8dp" >
+
+    <!-- 定制按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/adviser_bottom_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/adviser_bottom_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/zhuye_selected" />
+
+        <TextView
+            android:id="@+id/adviser_bottom_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adviser_bottom_iv"
+            android:layout_centerHorizontal="true"
+            android:text="定制"
+            android:textColor="@color/red1"
+            android:textSize="10sp" />
+    </RelativeLayout>
+    <!-- 买手按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/buyer_bottom_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/buyer_bottom_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/cyd_unselected" />
+
+        <TextView
+            android:id="@+id/buyer_bottom_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buyer_bottom_iv"
+            android:layout_centerHorizontal="true"
+            android:text="买手"
+            android:textColor="@color/black4"
+            android:textSize="10sp" />
+    </RelativeLayout>
+    <!-- 发现按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/find_bottom_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/find_bottom_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/myb_unselected" />
+
+        <TextView
+            android:id="@+id/find_bottom_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/find_bottom_iv"
+            android:layout_centerHorizontal="true"
+            android:text="发现"
+            android:textColor="@color/black4"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_bottom_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/my_bottom_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/w_unselected" />
+
+        <TextView
+            android:id="@+id/my_bottom_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_bottom_iv"
+            android:layout_centerHorizontal="true"
+            android:text="我"
+            android:textColor="@color/black4"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</LinearLayout>

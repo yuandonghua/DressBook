@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_grey" >
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/top2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/main_horizontal_side_offset_normal"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <cn.dressbook.ui.view.CircleImageView2
+                            android:id="@+id/ivArticleDetailPortrait"
+                            android:layout_width="58dp"
+                            android:layout_height="58dp"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/tvArticleDetailUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/ivArticleDetailPortrait"
+                            android:text=""
+                            android:textColor="@color/main_text_grey"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <TextView
+                            android:id="@+id/tvArticleDetailUserLevel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="@dimen/main_horizontal_side_offset_normal"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/tvArticleDetailUserName"
+                            android:text=""
+                            android:textColor="@color/main_text_orange"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <TextView
+                            android:id="@+id/tvArticleDetailDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvArticleDetailUserName"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@id/ivArticleDetailPortrait"
+                            android:text=""
+                            android:textColor="@color/main_text_grey"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/tvArticleDetailFocus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/shape_white_grey_stroke_small_radius"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="@dimen/main_horizontal_side_offset_normal"
+                            android:paddingRight="@dimen/main_horizontal_side_offset_normal"
+                            android:paddingTop="4dp"
+                            android:text="+ 关注"
+                            android:textColor="@color/main_text_grey"
+                            android:textSize="@dimen/text_size_small" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvArticleDetailTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/main_horizontal_side_offset_normal"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/main_text_orange"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:id="@+id/tvArticleDetailContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/main_horizontal_side_offset_normal"
+                        android:text=""
+                        android:textColor="@color/main_text_grey"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <cn.dressbook.ui.view.HyperGridView
+                        android:id="@+id/gvArticleDetailPhotos"
+                        android:layout_width="336dp"
+                        android:layout_height="336dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/main_horizontal_side_offset_normal"
+                        android:numColumns="3"
+                        android:scrollbars="none"
+                        android:visibility="visible" >
+                    </cn.dressbook.ui.view.HyperGridView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_grey_line"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/main_grey_line" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_background_grey"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/main_horizontal_side_offset_normal"
+                    android:text="共有"
+                    android:textColor="@color/main_text_grey"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/tvArticleDetailCommentsNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="4dp"
+                    android:text="0"
+                    android:textColor="@color/main_red"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="条评论"
+                    android:textColor="@color/main_text_grey"
+                    android:textSize="@dimen/text_size_medium" />
+            </LinearLayout>
+
+            <cn.dressbook.ui.view.HyperListView
+                android:id="@+id/lvArticleDetailComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_background_grey"
+                android:divider="@color/transparent"
+                android:dividerHeight="6dp"
+                android:fadingEdge="none"
+                android:scrollbars="vertical" >
+            </cn.dressbook.ui.view.HyperListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/transparent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_text_light_grey"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlArticleDetailLike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_grey_dark_grey"
+            android:clickable="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:focusable="false"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ivArticleDetailLike"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_grey_like_large" />
+
+                <TextView
+                    android:id="@+id/tvArticleDetailLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="喜欢"
+                    android:textColor="@color/main_text_grey"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlArticleDetailComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.3dp"
+            android:layout_marginRight="0.3dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_grey_dark_grey"
+            android:clickable="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_grey_comment_large" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="评论"
+                    android:textColor="@color/main_text_grey"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlArticleDetailTransmit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_grey_dark_grey"
+            android:clickable="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_grey_transmit_large" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="转发"
+                    android:textColor="@color/main_text_grey"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlArticleDetailCommentInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_grey_line"
+                android:layout_alignParentTop="true"
+                android:background="@color/main_grey_line" />
+
+            <TextView
+                android:id="@+id/tvArticleDetailCommentSubmit"
+                android:layout_width="60dp"
+                android:layout_height="42dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/main_red"
+                android:textSize="@dimen/text_size_normal" />
+
+            <ImageView
+                android:id="@+id/ivArticleDetailAddPhoto"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/main_horizontal_side_offset_normal"
+                android:layout_marginRight="@dimen/main_horizontal_side_offset_normal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_grey_add_photo_comment" />
+
+            <EditText
+                android:id="@+id/etArticleDetailCommentContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_toLeftOf="@id/tvArticleDetailCommentSubmit"
+                android:layout_toRightOf="@id/ivArticleDetailAddPhoto"
+                android:background="@drawable/shape_white_grey_stroke_radius"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:maxLength="144"
+                android:padding="6dp"
+                android:textColor="@color/main_text_grey"
+                android:textColorHint="@color/main_text_hint"
+                android:textSize="@dimen/text_size_medium" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llArticleDetailAddPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_grey_line"
+                android:background="@color/main_grey_line" />
+
+            <cn.dressbook.ui.view.HyperGridView
+                android:id="@+id/gvArticleDetailUploadPhotos"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/main_horizontal_side_offset_normal"
+                android:numColumns="5" >
+            </cn.dressbook.ui.view.HyperGridView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

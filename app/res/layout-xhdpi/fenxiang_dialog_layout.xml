@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" >
+
+    <TextView
+        android:id="@+id/fenxiang_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="分享穿衣典App！"
+        android:textColor="@color/heise"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fenxiang_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fenxiang_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/heise"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/fenxiang_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fenxiang_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/lanse1"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:text="分享"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

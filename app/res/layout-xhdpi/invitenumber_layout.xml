@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/zhuye_bg" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top" />
+
+    <!-- 手机号 -->
+
+    <RelativeLayout
+        android:id="@+id/phone_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:padding="12dp" >
+
+        <TextView
+            android:id="@+id/myinvite_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的邀请码:"
+            android:textColor="@color/black4"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/myinvite_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/myinvite_key"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/myinvite_key"
+            android:background="@color/white"
+            android:enabled="false"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/black1"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/myinvite_iv"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/myinvite_key"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sys" />
+
+        <TextView
+            android:id="@+id/myinvite_link"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myinvite_iv"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:textColor="@color/black1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/send_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myinvite_link"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview_red_bg_1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="发送邀请"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@anim/loading2"
+        android:visibility="gone" />
+
+</RelativeLayout>

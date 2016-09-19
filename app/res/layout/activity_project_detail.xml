@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/top" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvProjectDetailTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_project_title_height"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLength="20"
+                    android:textColor="@color/main_text_grey"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/ivProjectDetailPicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_project_photo_height"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/main_horizontal_side_offset_normal" >
+
+                    <TextView
+                        android:id="@+id/tvProjectDetailStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:singleLine="true"
+                        android:textColor="@color/main_text_grey"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <TextView
+                        android:id="@+id/tvProjectDetailTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/main_horizontal_side_offset_normal"
+                        android:singleLine="true"
+                        android:textColor="@color/main_text_grey"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <TextView
+                        android:id="@+id/tvProjectDetailJoinNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/main_horizontal_side_offset_normal"
+                        android:singleLine="true"
+                        android:textColor="@color/main_text_grey"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <TextView
+                        android:id="@+id/tvProjectDetailSupportNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/main_horizontal_side_offset_normal"
+                        android:layout_toLeftOf="@id/tvProjectDetailJoinNum"
+                        android:singleLine="true"
+                        android:textColor="@color/main_text_grey"
+                        android:textSize="@dimen/text_size_medium" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvProjectDetailSponsor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_horizontal_side_offset_normal"
+                    android:layout_marginTop="@dimen/main_horizontal_side_offset_normal"
+                    android:singleLine="true"
+                    android:textColor="@color/main_text_grey"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/tvProjectDetailDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/main_horizontal_side_offset_normal"
+                    android:textColor="@color/main_text_grey"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#efefef"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/main_grey_line"
+                        android:background="@color/main_grey_line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/main_horizontal_side_offset_normal"
+                        android:gravity="left|center_vertical"
+                        android:text="收件信息"
+                        android:textColor="@color/main_text_grey"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/main_grey_line"
+                        android:layout_marginLeft="@dimen/main_grey_line_side_offset_normal"
+                        android:layout_marginRight="@dimen/main_grey_line_side_offset_normal"
+                        android:background="@color/main_grey_line" />
+
+                    <cn.dressbook.ui.view.HyperListView
+                        android:id="@+id/lvProjectDetailDonateAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#efefef"
+                        android:divider="@color/transparent"
+                        android:dividerHeight="0dp"
+                        android:fadingEdge="none" >
+                    </cn.dressbook.ui.view.HyperListView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="项目进展"
+                    android:textColor="@color/main_text_grey"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_grey_line"
+                    android:layout_marginLeft="@dimen/main_grey_line_side_offset_normal"
+                    android:layout_marginRight="@dimen/main_grey_line_side_offset_normal"
+                    android:background="@color/main_grey_line" />
+
+                <cn.dressbook.ui.view.HyperListView
+                    android:id="@+id/lvProjectDetailProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/main_horizontal_side_offset_normal"
+                    android:background="@color/white"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="0dp"
+                    android:fadingEdge="none" >
+                </cn.dressbook.ui.view.HyperListView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_text_light_grey"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlProjectDetailSupport"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_grey_dark_grey"
+            android:clickable="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:focusable="false"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ivProjectDetailSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_grey_praise" />
+
+                <TextView
+                    android:id="@+id/tvProjectDetailSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="支持"
+                    android:textColor="@color/main_text_grey"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlProjectDetailJoin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.3dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_grey_dark_grey"
+            android:clickable="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:focusable="false"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ivProjectDetailJoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_grey_join" />
+
+                <TextView
+                    android:id="@+id/tvProjectDetailJoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:text="参加"
+                    android:textColor="@color/main_text_grey"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

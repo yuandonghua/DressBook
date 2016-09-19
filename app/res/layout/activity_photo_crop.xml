@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhuye_bg"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top" />
+
+    <LinearLayout
+        android:id="@+id/photo_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:background="@drawable/bodyedit_bg"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/container_view"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:background="@color/white" >
+
+            <!-- 图片展示 -->
+
+            <cn.dressbook.ui.face.view.BodyImageView
+                android:id="@+id/crop_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!-- 手势控制图片的移动和缩放 -->
+
+            <cn.dressbook.ui.face.view.FCGestureView
+                android:id="@+id/FCGestureView2"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/head_hint" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/revolve_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/aleft_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/aleft_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/aleft" />
+
+                <TextView
+                    android:id="@+id/aleft_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/aleft_iv"
+                    android:layout_alignTop="@+id/aleft_iv"
+                    android:layout_toLeftOf="@+id/aleft_iv"
+                    android:gravity="center"
+                    android:text="左旋"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rightward_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/rightward_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/rightward_iv"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/rightward_iv"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="右旋"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/rightward_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/rightward_tv"
+                    android:src="@drawable/rightward" />
+
+                <ImageView
+                    android:id="@+id/hint_iv"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/hint_1" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/hue_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:text="色相"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/hue_seekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_toRightOf="@+id/hue_tv"
+                android:max="255"
+                android:maxHeight="26dp"
+                android:progress="255"
+                android:progressDrawable="@drawable/seekbar_style_5"
+                android:thumb="@drawable/seekbar_controler"
+                android:thumbOffset="0dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/saturation_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:text="饱和"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/saturation_seekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_toRightOf="@+id/saturation_tv"
+                android:max="255"
+                android:maxHeight="26dp"
+                android:progress="127"
+                android:progressDrawable="@drawable/seekbar_style_6"
+                android:thumb="@drawable/seekbar_controler"
+                android:thumbOffset="0dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/luminance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:text="亮度"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/luminance_seekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_toRightOf="@+id/luminance_tv"
+                android:max="255"
+                android:maxHeight="26dp"
+                android:progress="127"
+                android:progressDrawable="@drawable/seekbar_style_7"
+                android:thumb="@drawable/seekbar_controler"
+                android:thumbOffset="0dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/ad_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center|bottom"
+        android:gravity="center" >
+    </RelativeLayout>
+    -->
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@anim/loading2"
+        android:visibility="gone" />
+
+</RelativeLayout>

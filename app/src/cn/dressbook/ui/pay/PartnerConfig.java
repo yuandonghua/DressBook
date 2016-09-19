@@ -1,0 +1,15 @@
+package cn.dressbook.ui.pay;
+
+public class PartnerConfig {
+	// 合作商户ID.用签约支付宝账号登录ms.alipay.com后,在账户信息页面获取.
+	public static final String PARTNER = "2088902722432243";
+	// 商户收款的支付宝账号
+	public static final String SELLER = "2088902722432243";
+	// 商户(RSA)私钥
+	public static final String RSA_PRIVATE = "MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAMUyTMaakUrLCJBQUAeK2FucgY65wcexLudfMoh4vAPlP2PE8HnAuPkMHQUo65SsWtOWPjRNkLH9XrPsY0TKQ+H7eh9zncRcCWWMRItENi76/sZGVh7eeW53BaUCUIpsPL2YYkbj/+JOQ9xpaYZ4JjMtjhF0cSxM4EAkLIWDLnh1AgMBAAECgYAS1sRY8OlSgOUXjGSo483ZqrEB5qMppba6afDU8tvbb2pH6MekihHh0RNwq8Ed2f1vW1oj+wkIyBDlFX9CUiR75nEg1XM04V8iv+0ZrPQ1z1WiwL1REz2JbCtkDDJciEuCFn+JfKiATwdMzL8SB6veVLV7EWssOjomlU1fLwgQQQJBAOIUwflQ82qVBo+PU2GeKHcX2IvsWQTJsjElrvAXtAlciJRM1CZjmFy8f8JCw2n9LMuJtYRP0giC7pD0y1Mm0OUCQQDfSvsoxIXZXvDVDXiRWp8L1ik0dgv9znTFk2jxSlk988bdApl0Ipt+UoAuyEdhKsh0bKH7u45NGV7YXHc8xuBRAkAtJVYC0k55Zx7zRfyxjqKn/YQJlP3Fvf0uYUcIvML/55GCg8ENlW/UfPPKOAjLvnnWfz5XGJVpi7PWEHwVs7edAkEAsl3T+UHa5cOYP6guGnY4PB1L9vMhKxJDZxwUpUJNvVZBEYSlDgcjDKpcaIJlunGRhKbOUicFSgMtJ0ndmbgHsQJBAIXyi7rkQ5HzPGTejJA8hYt/NpdZ6NDw7NF3TckNfGQ1fqrFgUKOac2qTOfd5oHgqw51VFRw72OvbTxOvRg0oMo=";
+
+	// 支付宝(RSA)公钥 用签约支付宝账号登录ms.alipay.com后,在密钥管理页面获取.
+	public static final String RSA_ALIPAY_PUBLIC = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDYMDcGl4wN8lEPGRFiu/rErZt9acUZe0u22qWZ 9aGyIOrmGjQndg9/Z4pH3191nCgQJyUkRozTo5f3F4bW/L9IYEq31XhnGwts4iQXN2g/mNGzkpN2 3E92wWLH99B7ZxQ0JFJuBCBuQ3rqKdBMDVUxUwTepvviCR+8ZutDGfvKeQIDAQAB";
+	// 支付宝安全支付服务apk的名称,必须与assets目录下的apk名称一致
+	public static final String ALIPAY_PLUGIN_NAME = "alipay_plugin_20120428msp.apk";
+}

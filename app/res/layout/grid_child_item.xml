@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp"
+    android:descendantFocusability="blocksDescendants" >
+
+    <cn.dressbook.ui.general.FotoCut.imagescan.MyImageView
+        android:id="@+id/child_image"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:background="@drawable/friends_sends_pictures_no"
+        android:scaleType="fitXY" />
+    
+    <!--  ImageView
+            android:id="@+id/child_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/a_49" /-->
+
+    <!--  TextView
+        android:id="@+id/frame_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/albums_icon_bg"
+        android:gravity="center"
+        /-->
+
+</FrameLayout>

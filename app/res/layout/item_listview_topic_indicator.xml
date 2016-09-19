@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="34dp"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tvTopicIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="123232323"
+            android:textColor="@color/main_text_grey"
+            android:textSize="@dimen/text_size_medium" />
+
+        <View
+            android:id="@+id/vTopicIndicatorRedPiont"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_white_red_stroke_circle"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

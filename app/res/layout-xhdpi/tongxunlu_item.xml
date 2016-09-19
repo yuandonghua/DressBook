@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- 首字母 -->
+
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lanse2"
+        android:paddingLeft="10dip"
+        android:textColor="@color/white" />
+
+    <!-- 联系人信息 -->
+
+    <QuickContactBadge
+        android:id="@+id/qcb"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/alpha"
+        android:layout_marginBottom="3dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dip" />
+
+    <RelativeLayout
+        android:id="@+id/cb_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/alpha"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:checked="false"
+        android:background="@android:drawable/checkbox_off_background">
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/qcb"
+        android:layout_alignLeft="@+id/name"
+        android:layout_marginBottom="5dp"
+        android:singleLine="true"
+        android:textColor="@color/lanse1"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/qcb"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/qcb"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/lanse1"
+        android:textSize="16sp" />
+
+</RelativeLayout>

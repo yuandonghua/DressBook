@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">穿衣典</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_title_content">请选择分类</string>
+    <string name="style_btn_content">风格</string>
+    <string name="occasion_btn_content">场合</string>
+    <string name="price_btn_content">价格</string>
+    <string name="pinpai_btn_content">品牌</string>
+    <string name="release_to_refresh">松开刷新</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="refreshing">正在刷新</string>
+    <string name="updating">Updating：</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载中\u2026</string>
+    <string name="share_content">说点什么吧!</string>
+    <string name="share_content_count">140字</string>
+    <string name="camera_prompt">请将您的脸对准限定框</string>
+    <string name="improvedata_wancheng">确定</string>
+    <string name="improvedata_age">年龄: </string>
+    <string name="improvedata_height">身高: </string>
+    <string name="improvedata_weight">体重: </string>
+    <string name="improvedata_xiongwei">胸围: </string>
+    <string name="improvedata_yaowei">腰围: </string>
+    <string name="improvedata_tunwei">臀围: </string>
+    <string name="improvedata_jiankuan">肩宽: </string>
+    <string name="improvedata_yaoweigao">腰围高: </string>
+    <string name="improvedata_bichang">臂长: </string>
+    <string name="improvedata_jingwei">颈围: </string>
+    <string name="improvedata_wanwei">腕围: </string>
+    <string name="pang">胖</string>
+    <string name="pianpang">偏胖</string>
+    <string name="biaozhun">标准</string>
+    <string name="pianshou">偏瘦</string>
+    <string name="shou">瘦</string>
+    <string name="xingxiangguanli">形象管理</string>
+    <string name="zhanghuguanli">账户管理</string>
+    <string name="shejishi_key">设计师   </string>
+    <string name="Ensure">"确定"</string>
+    <string name="Cancel">"取消"</string>
+    <string name="confirm_install_hint">"安装提示"</string>
+    <string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+    <string name="order_success">支付金额</string>
+    <string name="check_sign_failed">您的订单信息已被非法篡改。</string>
+
+    <!-- General strings -->
+
+
+    <!-- title for the dialog showing the error of camera hardware -->
+    <string name="camera_error_title">Camera error</string>
+
+    <!-- message for the dialog showing the error of camera hardware -->
+    <string name="cannot_connect_camera">Cannot connect to camera.</string>
+
+    <!-- label for the icon meaning 'show me all the images that were taken with the camera' -->
+    <string name="camera_label">Camera</string>
+
+    <!-- label for the 'video recording application shown in the top level 'all applications' -->
+    <string name="video_camera_label">Camcorder</string>
+
+    <!-- label for the folder that contains Camera pictures in the gallery -->
+    <string name="gallery_camera_bucket_name">Camera pictures</string>
+
+    <!-- label for the folder that contains Camera videos in the gallery -->
+    <string name="gallery_camera_videos_bucket_name">Camera videos</string>
+
+    <!-- alert to the user to wait for some operation to complete -->
+    <string name="wait">Please wait\u2026</string>
+
+    <!-- alert to the user to that an SD card must be installed before using the camera -->
+    <string name="no_storage">Please insert an SD card before using the camera.</string>
+
+    <!-- alert to the user to that the SD card is too full to complete the operation -->
+    <string name="not_enough_space">Your SD card is full.</string>
+
+    <!-- alert to the user to that the SD card is being disk-checked -->
+    <string name="preparing_sd">Preparing SD card\u2026</string>
+
+    <!-- Settings stuff -->
+
+
+    <!-- Menu items: -->
+    <!-- menu pick to go to the settings screen -->
+
+
+    <!-- menu pick to view the details of the currently selected image -->
+
+
+    <!-- menu pick to show the location of the currently selected image on maps -->
+
+
+    <!-- menu pick to rotate the currently selected image (brings up submenu) -->
+
+
+    <!-- menu pick to rotate the currently selected image to the left -->
+
+
+    <!-- menu pick to rotate the currently selected image to the right -->
+
+
+    <!-- Confirmation dialog title after deleting a picture -->
+    <!-- Confirmation dialog message after deleting a picture -->
+    <!-- Confirmation dialog message after deleting a video -->
+
+
+    <!-- Confirmation dialog when restoring settings -->
+    <string name="confirm_restore_title">Restore defaults</string>
+    <string name="confirm_restore_message">Camera settings will be restored to defaults.</string>
+
+    <!-- button in review mode indicating that the video just taken should be played -->
+    <string name="review_play">PLAY</string>
+
+    <!-- button in review mode indicating that the video recording session should be canceled -->
+    <string name="review_cancel">CANCEL</string>
+
+    <!-- button in review mode indicating that the taken video is OK to be attached/uploaded -->
+    <string name="review_ok">OK</string>
+
+    <!-- button in review mode indicate the user want to retake another picture for attachment -->
+    <string name="review_retake">RETAKE</string>
+
+    <!-- button indicating that the picture just taken should be deleted -->
+
+
+    <!-- button indicating that the picture just taken should be shared by email, mms, etc -->
+
+
+    <!-- button indicating that the picture just taken should be set as a contact photo, wallpaper, etc -->
+
+
+    <!-- button indicating that the picture just taken should be cropped -->
+
+
+    <!-- Toast after trying to share a picture indicating that there are no applications which are capable of so doing. -->
+
+
+    <!-- Toast after trying to share a video indicating that there are no applications which are capable of so doing. -->
+
+
+    <!-- Menu item for playing the video. -->
+
+
+    <!-- Button indicating to go to the image gallery -->
+    <string name="camera_gallery_photos_text">Gallery</string>
+
+    <!-- Settings screen, setting title text -->
+    <string name="pref_camera_recordlocation_title">Store location</string>
+
+    <!-- Settings screen, Record location dialog choices -->
+    <string name="pref_camera_recordlocation_entry_off">Off</string>
+    <string name="pref_camera_recordlocation_entry_on">On</string>
+
+    <!-- The Video length settings in preference -->
+    <string name="pref_video_quality_title">Video quality</string>
+    <string name="pref_video_quality_entry_high">High (30m)</string>
+    <string name="pref_video_quality_entry_low">Low (30m)</string>
+    <string name="pref_video_quality_entry_mms">MMS (Low, 30s)</string>
+    <string name="pref_video_quality_entry_youtube">YouTube (High, 10m)</string>
+
+    <!-- Settings screen, Camera setting category title -->
+    <string name="pref_camera_settings_category">Camera settings</string>
+
+    <!-- Settings screen, Camcorder setting category title -->
+    <string name="pref_camcorder_settings_category">Camcorder settings</string>
+
+    <!-- Settings screen, Picture size title -->
+    <string name="pref_camera_picturesize_title">Picture size</string>
+
+    <!-- Settings screen, Picture size dialog radio button choices -->
+    <string name="pref_camera_picturesize_entry_2592x1936">5M Pixels</string>
+    <string name="pref_camera_picturesize_entry_2048x1536">3M Pixels</string>
+    <string name="pref_camera_picturesize_entry_1600x1200">2M Pixels</string>
+    <string name="pref_camera_picturesize_entry_1024x768">1M Pixels</string>
+    <string name="pref_camera_picturesize_entry_320x240">QVGA</string>
+
+    <!--
+         Default picture quality setting. See
+         pref_camera_jpegquality_entryvalues for possible values
+    -->
+
+
+    <!-- Settings screen, Picture quality title -->
+    <string name="pref_camera_jpegquality_title">Picture quality</string>
+
+    <!-- Settings screen, Picture quality dialog radio button choices -->
+    <string name="pref_camera_jpegquality_entry_superfine">Super fine</string>
+    <string name="pref_camera_jpegquality_entry_fine">Fine</string>
+    <string name="pref_camera_jpegquality_entry_normal">Normal</string>
+
+    <!-- Default focus mode setting. -->
+
+
+    <!-- Settings screen, Focus mode title -->
+    <string name="pref_camera_focusmode_title">Focus mode</string>
+
+    <!-- Settings screen, Focue mode dialog radio button choices -->
+    <string name="pref_camera_focusmode_entry_auto">Auto</string>
+    <string name="pref_camera_focusmode_entry_infinity">Infinity</string>
+    <string name="pref_camera_focusmode_entry_macro">Macro</string>
+
+    <!-- Default flash mode setting. -->
+
+
+    <!-- Value for flash off setting -->
+
+
+    <!-- Settings screen, Flash mode title -->
+    <string name="pref_camera_flashmode_title">Flash mode</string>
+
+    <!-- Settings screen, Focue mode dialog radio button choices -->
+    <string name="pref_camera_flashmode_entry_auto">Auto</string>
+    <string name="pref_camera_flashmode_entry_on">On</string>
+    <string name="pref_camera_flashmode_entry_off">Off</string>
+
+    <!-- Default videocamera flash mode setting. -->
+
+
+    <!-- Default white balance setting. -->
+
+
+    <!-- Settings screen, white balance title -->
+    <string name="pref_camera_whitebalance_title">White balance</string>
+
+    <!-- Settings screen, White balance dialog radio button choices -->
+    <string name="pref_camera_whitebalance_entry_auto">Auto</string>
+    <string name="pref_camera_whitebalance_entry_incandescent">Incandescent</string>
+    <string name="pref_camera_whitebalance_entry_daylight">Daylight</string>
+    <string name="pref_camera_whitebalance_entry_fluorescent">Fluorescent</string>
+    <string name="pref_camera_whitebalance_entry_cloudy">Cloudy</string>
+
+    <!-- Default color effect setting. -->
+
+
+    <!-- Settings screen, Select Color effect title -->
+    <string name="pref_camera_coloreffect_title">Color effect</string>
+
+    <!-- Settings screen, Color effect dialog radio button choices -->
+    <string name="pref_camera_coloreffect_entry_none">None</string>
+    <string name="pref_camera_coloreffect_entry_mono">Mono</string>
+    <string name="pref_camera_coloreffect_entry_sepia">Sepia</string>
+    <string name="pref_camera_coloreffect_entry_negative">Negative</string>
+    <!-- Color effect that overexposes and reverses some of the tones. -->
+    <string name="pref_camera_coloreffect_entry_solarize">Solarize</string>
+    <string name="pref_camera_coloreffect_entry_posterize">Posterize</string>
+    <string name="pref_camera_coloreffect_entry_aqua">Aqua</string>
+    <string name="pref_camera_coloreffect_entry_pastel">Pastel</string>
+    <string name="pref_camera_coloreffect_entry_mosaic">Mosaic</string>
+    <string name="pref_camera_coloreffect_entry_redtint">Red tint</string>
+    <string name="pref_camera_coloreffect_entry_bluetint">Blue tint</string>
+    <string name="pref_camera_coloreffect_entry_greentint">Green tint</string>
+
+    <!-- Default scene mode setting. -->
+
+
+    <!-- Settings screen, Select Scene mode -->
+    <string name="pref_camera_scenemode_title">Scene mode</string>
+
+    <!-- Settings menu, scene mode choices -->
+    <string name="pref_camera_scenemode_entry_auto">Auto</string>
+    <!-- Scene mode that takes an image quickly with little motion blur. -->
+    <string name="pref_camera_scenemode_entry_action">Action</string>
+    <!-- Scene mode that takes an image with as little noise as possible so details of the subject are maintained. -->
+    <string name="pref_camera_scenemode_entry_portrait">Portrait</string>
+    <!-- Scene mode that takes an image of a landscape assuming all subjects are relatively far from the phone. -->
+    <string name="pref_camera_scenemode_entry_landscape">Landscape</string>
+    <!-- Scene mode that takes long exposures to capture night scenes without flash. -->
+    <string name="pref_camera_scenemode_entry_night">Night</string>
+    <!-- Scene mode that takes night shots with long exposure and flash to illuminate the subject while still capturing darker detail in the background. -->
+    <string name="pref_camera_scenemode_entry_night_portrait">Night portrait</string>
+    <!-- Scene mode to be used in a stage show. -->
+    <string name="pref_camera_scenemode_entry_theatre">Theatre</string>
+    <!-- Scene mode optimized for taking images on the beach. -->
+    <string name="pref_camera_scenemode_entry_beach">Beach</string>
+    <!-- Scene mode optimized for taking images in the snow. -->
+    <string name="pref_camera_scenemode_entry_snow">Snow</string>
+    <!-- Scene mode optimized for taking images in the sunset. -->
+    <string name="pref_camera_scenemode_entry_sunset">Sunset</string>
+    <!-- Scene mode for taking a photo as sharp as possible. -->
+    <string name="pref_camera_scenemode_entry_steadyphoto">Steady photo</string>
+    <!-- Scene mode optimized for taking images of fireworks. -->
+    <string name="pref_camera_scenemode_entry_fireworks">Fireworks</string>
+
+    <!-- Settings menu, enable quick capture mode or not -->
+    <string name="pref_camera_quickcapture_title">Quick capture</string>
+    <string name="pref_camera_quickcapture_entry_on">On</string>
+    <string name="pref_camera_quickcapture_entry_off">Off</string>
+
+    <!-- Restore settings item in preference -->
+    <string name="pref_restore_title">Camera settings</string>
+    <string name="pref_restore_detail">Restore to defaults</string>
+
+    <!-- Exposure settings in preference -->
+    <string name="pref_exposure_title">Exposure</string>
+
+    <!-- Framing grid settings in preference -->
+
+
+    <!-- Message to show when there's no lat/lng information in the image -->
+    <!-- Title of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+
+
+    <!-- Used to format image dimensions in Details dialog. e.g. 64 x 64 -->
+    <!-- Used to format short video duration in Details dialog. minutes:seconds e.g. 00:30 -->
+    <!-- Used to format video duration in Details dialog. hours:minutes:seconds e.g. 0:21:30 -->
+    <!-- Unit of measure in the Details dialog frames per second. e.g. 20 fps -->
+    <!-- Unit of measure in the Details dialog K bits per second. e.g. 192 Kbps -->
+    <!-- Unit of measure in the Details dialog M bits per second. e.g. 2.3 Mbps -->
+    <!-- Details dialog "OK" button. Dismisses dialog. -->
+    <string name="details_ok">OK</string>
+
+    <!--
+         Displayed in the title of the dialog for things to do with a picture that
+         is to be sent to another application:
+    -->
+
+
+    <!--
+         Displayed in the title of the dialog for things to do with a picture that
+         is to be "set as" (e.g. set as contact photo or set as wallpaper)
+    -->
+
+
+    <!--
+         Displayed in the title of the dialog for things to do with a video that
+         is to be sent to another application.
+    -->
+
+
+    <!-- Low-memory dialog message -->
+    <string name="spaceIsLow_content">Your SD card is running out of space. Change the quality setting or delete items from Gallery.</string>
+
+    <!-- Camera format string for new image files. Passed to java.text.SimpleDateFormat. -->
+
+
+    <!-- Video Camera format string for new video files. Passed to java.text.SimpleDateFormat. -->
+
+
+    <!-- The messsage shown when video record reaches size limit. -->
+    <string name="video_reach_size_limit">Size limit reached.</string>
+
+    <!-- The title show on the zoom controller -->
+    <string name="zoom_control_title">Zoom</string>
+    <string name="switch_to_camera_lable">Switch to camera</string>
+    <string name="switch_to_video_lable">Switch to video</string>
+ <string name="com_taobao_tae_sdk_login_progress_message">登录中</string>
+    <string name="com_taobao_tae_sdk_loading_progress_message">加载中</string>
+    <string name="com_taobao_tae_sdk_authorize_title">登录授权</string>
+    <string name="com_taobao_tae_sdk_system_exception">系统异常</string>
+    <string name="com_taobao_tae_sdk_trade_confirm_progress_message">交易确认中</string>
+    <string name="com_taobao_tae_sdk_trade_title">确认下单</string>
+    <string name="com_taobao_tae_sdk_alert_message">您离开太久了，请重新操作</string>
+    <string name="com_taobao_tae_sdk_network_not_available_message">网络无法连接</string>
+    <string name="com_taobao_tae_sdk_logout_fail_message">登出失败</string>
+	
+    
+    <string name="com_taobao_tae_sdk_cart_title">购物车</string>
+    
+    
+    <string name="capture">拍摄</string>
+    <string name="album">专辑</string>
+    <string name="cancel">取消</string>
+    <string name="next">下一步</string>
+    <string name="processing">处理&#8230;</string>
+    <string name="ok">确认</string>
+    <string name="normal">无</string>
+    <string name="explore">作品库</string>
+    <string name="preview">预览</string>
+    <string name="crop">裁剪</string>
+    <string name="mode">模式</string>
+    <string name="delete">删除</string>
+    <string name="camera">相机</string>
+    <string name="library">导入照片</string>
+    <string name="filter">边框</string>
+    <string name="effect">特效</string>
+    <string name="select">选择</string>
+    <string name="imagebtn">图片</string>
+    <string name="share">分享</string>
+    <string name="title_activity_share">ShareActivity</string>
+    <string name="platformShare">分享到社交平台</string>
+    <string name="albumSave">保存到相册</string>
+    <string name="sina_weibo">新浪微博</string>
+    <string name="joy">惊喜</string>
+    <string name="swirl">轻舞</string>
+    <string name="tempest">飞扬</string>
+    <string name="wonderland">唯美</string>
+    <string name="romance">浪漫</string>
+    <string name="moonrise">流光</string>
+    <string name="splendor">异彩</string>
+    <string name="petrichor">雷雨</string>
+    <string name="starlight">星光</string>
+    <string name="random1">随机1</string>
+    <string name="random2">随机</string>
+    <string name="effect_no">原图</string>
+    <string name="frame_no">无</string>
+    <string name="raindrop">滴雨</string>
+    <string name="frame0">无</string>
+    <string name="frame1">糖果</string>
+    <string name="frame2">礼物</string>
+    <string name="frame3">尊贵</string>
+    <string name="frame4">雪人</string>
+    <string name="frame5">欢迎</string>
+    <string name="frame6">企鹅</string>
+    <string name="frame7">欢乐</string>
+    <string name="frame8">蝴蝶</string>
+    <string name="frame9">马灯</string>
+    <string name="clickExit">再次点击退出</string>
+    <string name="title">确认</string>
+    <string name="message_wait">上次的图片正在生成,请等待</string>
+    <string name="btn_yes">确认</string>
+    <string name="btn_Cancel">取消上次任务</string>
+    <string name="shareText">请围观最美的雪景相机</string>
+    <string name="shareTitle">来自雪景相机的分享</string>
+    <string name="share_desc">雪景相机</string>
+    <string name="gif_wait">Gif正在生成,请稍后再试.</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="hello_user">Hello %1$s!</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="download_app">下载其他应用:</string>
+    <string name="toccata">Toccata</string>
+    <string name="crop_photo">移动图片，裁剪合适的区域.</string>
+    <string name="snowvideo">雪景摄影</string>
+    <string name="title_activity_face_book_share">FaceBook 分享</string>
+ 
+    <string name="background">背景</string>
+    <string name="blending">融合</string>
+    <string name="photo">照片</string>
+    <string name="source">艺术</string>
+    <string name="original">原图</string>
+    <string name="pure">纯色</string>
+    <string name="cute">卡通</string>
+
+	<string name="draw">画笔</string>
+	<string name="rect">RECT</string>
+   <string name="undo">撤销</string>
+       <string name="erase">ERASE</string>
+   <string name="title_activity_eraser__use_draw_path">eraser__use_draw_path</string>
+
+     <string name="pergform_erase">消除前景</string>
+     <string name="pergform_change_background">更换背景</string>
+ <string name="clear">清除</string>
+  <string name="tap_to_edit">当前显示的自动消除处理的结果，你也可以点击"手动"按钮做一些手工处理，得到更佳效果。</string>
+  
+     <string name="f1">小</string>
+   <string name="f2">中</string>
+   <string name="f3">大</string>
+   <string name="color">颜色</string>
+   
+ <string name="try_later_message">The image file has not generated from pervious step, please try later.</string>
+   <string name="move_pinch_fill">拖动,放大或旋转图片，找到合适的部分填充.</string>
+ <string name="eraser">你必须选择一个区域才能进行下一步.</string>
+  <string name="changebg">你必须选择一个区域才能进行下一步.</string>
+  
+  <string name="grab">抠图</string>
+  <string name="auto">自动</string>
+ <string name="manual">手动</string>
+ 
+   <string name="tap_to_reedit">你可以点击结果图片重新编辑.</string>
+   <string name="select_paste_mode">选择底部不同模式，得到不同的融合效果.</string>
+ <string name="edit">编辑</string>
+  <string name="adjust">调节</string>
+ <string name="origsize">原始尺寸</string>
+	<string name="cropsize">裁剪尺寸</string>
+			<string name="magic_blush">魔法画笔</string>
+	<string name="blush">画笔</string>
+	<string name="magic_eraser">魔法擦除</string>
+	<string name="eraser1">擦除</string>
+	<string name="messagetip">点下移动图片.双指滑动缩放图片.</string>
+	    <string name="title_activity_collection_fragment">CollectionFragmentActivity</string>
+    <string name="hello_world">Hello world!</string>
+        <string name="title_activity_grab_cut">GrabCutActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+        <string name="perform_erase">Erase and Fill</string>
+    <string name="perform_change_background">改变背景</string>
+
+    <string name="please_wait">Please wait</string>
+    <string name="result">Result</string>
+    <string name="install">Install</string>
+    <string name="font">Font</string>
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on Color to apply</string>
+    <string name="bloor">Blur</string>
+    <string name="colorpant">ColorPaint</string>
+    <string name="color1">Compare</string>
+    <string name="color2">Carton</string>
+    <string name="white">White</string>
+    <string name="remember">Remember</string>
+    <string name="gray">Gray</string>
+    <string name="sharpen">Sharpen</string>
+    <string name="pencil">Pencil</string>
+    <string name="yanhua">Yanhua</string>
+    <string name="message">Message</string>
+    <string name="expect">Comming soon!</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="title_activity_save_to_gallery">Save to Gallery</string>
+    
+    
+</resources>

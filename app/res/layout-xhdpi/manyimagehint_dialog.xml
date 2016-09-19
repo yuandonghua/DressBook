@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <cn.dressbook.ui.view.MyViewPager
+        android:id="@+id/myviewpager"
+        android:layout_width="266dp"
+        android:layout_height="282dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/clear_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myviewpager"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/clear" />
+
+    <ImageView
+        android:id="@+id/left_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="@+id/myviewpager"
+        android:layout_alignTop="@+id/myviewpager"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/left" />
+
+    <ImageView
+        android:id="@+id/right_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/myviewpager"
+        android:layout_alignTop="@+id/myviewpager"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/right" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 北京兰贝科技有限公司版权所有 -->
+<project>
+
+    <package>
+
+        <!-- 不区分大小写，逗号隔开的metaName,代表不同SDK的渠道标识符 -->
+
+        <channels keyname="UMENG_CHANNEL" >
+
+            <channel value="small" />
+            <!--
+            <channel value="sougou" />
+            <channel value="oppo" />
+            <channel value="meizu" />
+            <channel value="wandoujia" />
+            <channel value="xiaomi" />
+            <channel value="huawei" />
+            <channel value="baidu" />
+            <channel value="360" />
+            <channel value="yingyongbao" />
+			<channel value="leshi" />
+            <channel value="guanwang" />
+            <channel value="anzhishichang" />
+            <channel value="UC" />
+            <channel value="jinli" />
+            <channel value="lianxiang" />
+            <channel value="dianxintianyi" />
+            <channel value="liantongwoshangdian" />
+            <channel value="zhongguoyidong" />
+            <channel value="taobao" />
+            <channel value="yingyonghui" />
+            <channel value="jifeng" />
+            <channel value="N_duowang" />
+            <channel value="mumayi" />
+            <channel value="wangyi" />
+            <channel value="souhu" />
+            <channel value="youyi" />
+            <channel value="jike" />
+            <channel value="sanxing" />
+            <channel value="kupai" />
+            <channel value="nearme" />
+            <channel value="liqu" />
+            <channel value="jiubang" />
+            <channel value="GooglePlay" />
+            -->
+
+        </channels>
+
+        <keystore
+            passwd="db20140303"
+            path="D:\穿衣典文档\dressbook.keystore" >
+
+            <alias
+                name="dressbookappkey"
+                passwd="db20140303" />
+        </keystore>
+
+        <outpath value="C:\Users\Administrator\Desktop\app" />
+    </package>
+
+</project>

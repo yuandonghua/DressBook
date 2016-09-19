@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="yellow">#e9a12f</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="blue1">#4b90ef</color>
+    <color name="blue2">#247ce0</color>
+    <color name="yellow1">#eebe3d</color>
+    <color name="yellow2">#ec3e3e</color>
+    <color name="canbao">#569bf0</color>
+    <color name="tuibao">#ebb33c</color>
+    <color name="black">#000000</color>
+    <color name="black1">#111111</color>
+    <color name="black2">#222222</color>
+    <color name="black3">#333333</color>
+    <color name="black4">#444444</color>
+    <color name="black5">#555555</color>
+    <color name="black6">#666666</color>
+    <color name="black7">#777777</color>
+    <color name="black8">#888888</color>
+    <color name="black9">#999999</color>
+    <color name="black10">#aaaaaa</color>
+    <color name="black11">#bbbbbb</color>
+    <color name="black12">#cccccc</color>
+    <color name="black13">#dddddd</color>
+    <color name="black14">#eeeeee</color>
+    <color name="black15">#f0f0f0</color>
+    <color name="black16">#f9f9f9</color>
+    <color name="red1">#cf2c28</color>
+    <!-- 全透明 -->
+    <color name="quantouming">#00ffffff</color>
+    <!-- 半透明 -->
+    <color name="translucent">#757b8799</color>
+    <!-- 灰色 -->
+    <color name="huise2">#999999</color>
+    <!-- 标题栏背景色 -->
+    <color name="bt_bg">#808080</color>
+    <!-- 主页字体未选中颜色 -->
+    <color name="zhuye_unselected">#808080</color>
+    <!-- 主页字体选中颜色 -->
+    <color name="zhuye_selected">#e5004f</color>
+    <!-- 发布需求标题颜色 -->
+    <color name="fbxq_bt">#4c4c4c</color>
+    <!-- 咨询推荐提示文字 -->
+    <color name="zxtj_ts">#808080</color>
+    <!-- 图片轮播底部灰色条 -->
+    <color name="shequ_tupianlunbo_bottom">#e6e6e6</color>
+    <!-- 个人中心 集结号 邀请好友 绑定手机 背景色 -->
+    <color name="grzx_top_bg">#fafafa</color>
+    <!-- 个人中心 功能条目选中色 -->
+    <color name="grzx_item_select">#cccccc</color>
+    <!-- 主界面 背景色 -->
+    <color name="zhuye_bg">#f0f0f0</color>
+    <!-- 通知栏标题 -->
+    <color name="tzl_title">#e5e5e5</color>
+    <!-- 通知栏内容 -->
+    <color name="tzl_text">#91929b</color>
+    <!-- 透明背景 -->
+    <color name="ablack14">#75a0a0a0</color>
+    <!-- 自定义对话框 -->
+    <color name="float_transparent">#66000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="menu_black">#686868</color>
+    <color name="choosed">#F5B800</color>
+    <color name="touming">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="text_pink">#FC6F9D</color>
+    <color name="clarity">#00000000</color>
+    <color name="gray">#a2a2a2</color>
+    <color name="qingse">#0abed2</color>
+    <!-- <color name="lanse1">#0abed2</color> -->
+    <!-- 主题色彩 -->
+    <color name="lanse1">#f21d86</color>
+    <color name="lanse2">#ed7e12</color>
+    <color name="wodefangan_unselected">#fa820f</color>
+    <color name="wodefangan_selected">#ff0000</color>
+    <color name="dimgrey">#696969</color>
+    <color name="floralwhite">#FFFAF0</color>
+    <color name="chegnse">#e7588e</color>
+    <color name="product_property_bg">#7BD2EE</color>
+    <color name="heise">#333333</color>
+    <color name="heise2">#323232</color>
+    <color name="huise">#959595</color>
+    <color name="huise1">#cccccc</color>
+    <color name="deep_red">#C4564C</color>
+    <color name="hongse">#FF0000</color>
+    <color name="dialog_title_blue">#9CCCF7</color>
+    <!-- 侧边栏背景黑色 -->
+    <color name="sliding_left_bg">#333</color>
+    <color name="sliding_menu_item_down">#ff39393b</color>
+    <color name="sliding_menu_item_release">#00000000</color>
+    <color name="sliding_menu_background">#ff2c2c2e</color>
+    <color name="sliding_menu_body_background">#fff5f5f5</color>
+    <color name="none">#00000000</color>
+    <color name="light_black">#3D3D3D</color>
+    <color name="brown">#8B4513</color>
+    <color name="dark_gray">#5B5B5B</color>
+    <color name="dark_blue">#53868B</color>
+    <color name="light_blue">#48D1CC</color>
+    <color name="green">#006400</color>
+    <color name="light_green">#00FF00</color>
+    <color name="orange">#EEB422</color>
+    <color name="gray1">#575757</color>
+    <color name="gray2">#404040</color>
+    <color name="pink">#EE6AA7</color>
+    <color name="green_1">#00FF00</color>
+    <color name="green_2">#00FA9A</color>
+    <color name="green_3">#008B00</color>
+    <color name="blue_1">#00FFFF</color>
+    <color name="blue_2">#00E5EE</color>
+    <color name="blue_3">#00CED1</color>
+    <color name="blue_4">#00B2EE</color>
+    <color name="blue_5">#009ACD</color>
+    <color name="blue_6">#008B8B</color>
+    <color name="blue_7">#00688B</color>
+    <color name="blue_8">#0000CD</color>
+    <color name="blue_9">#87c9f3</color>
+    <color name="pink_1">#FFBBFF</color>
+    <color name="pink_2">#FFAEB9</color>
+    <color name="pink_3">#FF34B3</color>
+    <color name="red_1">#F08080</color>
+    <color name="red_2">#EE799F</color>
+    <color name="red_3">#EE4000</color>
+    <color name="red_4">#EE2C2C</color>
+    <color name="red_5">#DC143C</color>
+    <color name="red_6">#A52A2A</color>
+    <color name="yellow_1">#EE7600</color>
+    <color name="yellow_2">#EEAD0E</color>
+    <color name="yellow_3">#EEC900</color>
+    <color name="yellow_4">#EEEE00</color>
+    <color name="gray_1">#969696</color>
+    <color name="gray_2">#6E6E6E</color>
+    <color name="gray_3">#575757</color>
+    <color name="gray_4">#404040</color>
+    <color name="orange_n">#E47D18</color>
+    <color name="gray_time">#C8C8C8</color>
+    <color name="gray_note">#DFDFDF</color>
+    <color name="gray_font">#3E3E3E</color>
+    <color name="black_ground">#e5e5e5</color>
+    <color name="profile_font">#CB7A07</color>
+    <color name="invite_ground">#221C1E</color>
+    <color name="invite_row_black">#1E191B</color>
+    <color name="menu_font">#796C71</color>
+    <color name="login_font">#D3D3D3</color>
+    <color name="forget_font">#4A4043</color>
+    <color name="login_button_font">#E69035</color>
+    <color name="weibo_font_color">#FFB83B</color>
+    <color name="male_font_color">#A5A19B</color>
+    <color name="send_code_font_color">#907C82</color>
+    <!-- 透明 -->
+    <color name="transparent">#0000</color>
+    <color name="main_black">#191315</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="color1">#DDFFB5</color>
+    <color name="color2">#FDCFFD</color>
+    <color name="color3">#B1FBFD</color>
+    <color name="blue_bar">#4e5c72</color>
+    <color name="yellow_bar">#DF9B5E</color>
+    <color name="main_red">#cf2c28</color>
+    <color name="main_background_grey">#efefee</color>
+    <color name="main_super_light_grey">#F7F7F7</color>
+    <color name="main_text_orange">#ff6600</color>
+    <color name="main_frame_grey">#9C9C9C</color>
+    <color name="main_text_grey">#80000000</color>
+    <color name="main_text_mid_grey">#60000000</color>
+    <color name="main_text_light_grey">#c3c3c3</color>
+    <color name="main_text_hint">#D9D9D9</color>
+    <color name="main_grey_line">#CFD0CE</color>
+
+</resources>

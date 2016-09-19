@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="MeitanInputActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/red1</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textSize_40">40px</dimen>
+    <dimen name="height_120">120px</dimen>
+    <dimen name="marginLeft_100">100px</dimen>
+    <dimen name="marginRight_100">100px</dimen>
+    <dimen name="marginTop_70">70px</dimen>
+    <dimen name="main_top_bar_offset">0dp</dimen>
+    <dimen name="main_top_bar_height">48dp</dimen>
+    <dimen name="main_horizontal_side_offset_normal">12dp</dimen>
+    <dimen name="main_small_icon">18dp</dimen>
+    <dimen name="main_grey_line">0.3dp</dimen>
+    <dimen name="main_grey_line_side_offset_normal">6dp</dimen>
+    <dimen name="main_grey_frame_line">0.4dp</dimen>
+    <dimen name="main_bottom_bar_height">54dp</dimen>
+    <dimen name="main_button_height">42dp</dimen>
+    <dimen name="main_project_title_height">36dp</dimen>
+    <dimen name="main_project_item_height">28dp</dimen>
+    <dimen name="main_project_photo_height">160dp</dimen>
+    <dimen name="main_pre">16dp</dimen>
+    <!-- 轮播图点 -->
+    <dimen name="lbt_dot">5dp</dimen>
+    <!-- TextSize -->
+    <dimen name="text_size_tiny">10sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">13sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_ziti">8sp</dimen>
+    <dimen name="text_size_big">16sp</dimen>
+    <dimen name="text_size_huge">17sp</dimen>
+    <dimen name="rightmargin_no">0dp</dimen>
+    <dimen name="leftmargin_no">0dp</dimen>
+    <dimen name="rightmargin">1dp</dimen>
+    <dimen name="leftmargin">1dp</dimen>
+    <dimen name="divider">1px</dimen>
+    <dimen name="divider1">1dp</dimen>
+    <dimen name="divider2">2dp</dimen>
+    <dimen name="divider4">4dp</dimen>
+    <dimen name="divider5">5dp</dimen>
+    <dimen name="h_twenty">22sp</dimen>
+    <dimen name="h_nineteen">19sp</dimen>
+    <dimen name="h_eighteen">20sp</dimen>
+    <dimen name="h_sixteen">18sp</dimen>
+    <dimen name="h_fifteen">17sp</dimen>
+    <dimen name="h_fourteen">16sp</dimen>
+    <dimen name="h_twelve">14sp</dimen>
+    <dimen name="h_nine">11sp</dimen>
+    <dimen name="version_height">230.0dip</dimen>
+    <dimen name="version_width">250dip</dimen>
+    <dimen name="version_title_height">34.0dip</dimen>
+    <dimen name="about_height">130dip</dimen>
+    <dimen name="about_width">130dip</dimen>
+    <dimen name="find_rl_height">130dip</dimen>
+
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/zhuye_bg"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top" />
+
+    <TextView
+        android:id="@+id/hint_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:text="您的衣保金退保申请明细:"
+        android:textColor="@color/black4"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/capital_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="衣保计划本金:"
+            android:textColor="@color/black4"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/capital_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/capital_key"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/capital_key"
+            android:textColor="@color/black2"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/ybj_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="奖励衣保金:"
+            android:textColor="@color/black4"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ybj_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ybj_key"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ybj_key"
+            android:textColor="@color/black2"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/join_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参保时间:"
+            android:textColor="@color/black3"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/join_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/join_key"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/join_key"
+            android:textColor="@color/black2"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/expire_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到期时间:"
+            android:textColor="@color/black3"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/expire_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/expire_key"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/expire_key"
+            android:textColor="@color/black2"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/notice_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_bg_5"
+            android:padding="6dp"
+            android:text="注意：提前收回本金，会产生违约金.违约金将从您的本金中扣除.具体详情请查看参保协议或咨询客服."
+            android:textColor="@color/black2"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/applyfor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/textview_red_bg_1"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="申请"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

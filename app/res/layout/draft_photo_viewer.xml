@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- com.snapwaver.view.ui.GifImageView com.snapwaver.view.ui.AutoImageView -->
+
+    <ImageView
+        android:id="@+id/draft_photo"
+        android:layout_width="170dip"
+        android:layout_height="170dip"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/a_49" />
+
+    <ImageView
+        android:id="@+id/video"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/video_icon"
+        android:clickable="false" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ad_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+       
+        android:src="@drawable/ad" />
+
+</RelativeLayout>

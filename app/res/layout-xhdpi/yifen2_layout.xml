@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/zhuye_bg" >
+
+    <RelativeLayout
+        android:id="@+id/systemmessage_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/system_iv"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/systemmessage" />
+
+        <TextView
+            android:id="@+id/system_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/system_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/system_iv"
+            android:text="系统消息"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/system_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/system_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/system_iv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/huise"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/system_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/huise"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

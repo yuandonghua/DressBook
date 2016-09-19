@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rect_frame_widget"
+    android:layout_width="80dp"
+    android:layout_height="80dp" >
+
+    <ImageView
+        android:id="@+id/draw_result_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/frame_play_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+</FrameLayout>
